@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../img/04.png';
+import img from '../../../../public/img/04.png';
 import Quotes from '../../Quote/Quote';
 import ButtonService from '../../Buttons/ButtonService';
 import {
@@ -33,7 +33,7 @@ const Social = () => {
         <WrappTitle>Social media Strategy</WrappTitle>
         <WrappText>
           Social media strategy is a plan of how to maximise engagement and
-          interactions across social media to achieve a company's objective.
+          interactions across social media to achieve a company’s objective.
           These objectives may be to generate leads, improve brand awareness or
           create a viral effect
         </WrappText>
@@ -51,9 +51,9 @@ const Social = () => {
         <Item>
           <TitleItem>content Production</TitleItem>
           <TitleText>
-            By creating new content, you're building a library of amazing
+            By creating new content, you’re building a library of amazing
             videous, images and other resources that define your brand. Every
-            time someone clicks on your article or image, you're instilling name
+            time someone clicks on your article or image, you’re instilling name
             recognition
           </TitleText>
         </Item>
@@ -68,7 +68,7 @@ const Social = () => {
       </List>
       <ButtonService />
       <SectionWrapp>
-        <ImdBg src={img} />
+        <ImdBg src={img} alt="04" />
         <SectionHelp>
           <Quotes />
           <SectionText>

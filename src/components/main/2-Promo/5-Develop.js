@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../img/05.png';
+import img from '../../../../public/img/05.png';
 import Quotes from '../../Quote/Quote';
 import ButtonService from '../../Buttons/ButtonService';
 import {
@@ -21,7 +21,7 @@ import {
   SectionText,
 } from './5-Develop.styled';
 
-const Social = () => {
+const Develop = () => {
   return (
     <Section>
       <TitleSection>
@@ -67,7 +67,7 @@ const Social = () => {
       </List>
       <ButtonService />
       <SectionWrapp>
-        <ImdBg src={img} />
+        <ImdBg src={img} alt="05" />
         <SectionHelp>
           <Quotes />
           <SectionText>
@@ -80,4 +80,4 @@ const Social = () => {
   );
 };
 
-export default Social;
+export default Develop;

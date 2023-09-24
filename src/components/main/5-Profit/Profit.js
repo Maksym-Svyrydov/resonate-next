@@ -1,6 +1,6 @@
 import { Section } from './Profit.styled';
-import profitImg from '../../../img/Profit_img.png';
-import ButtonMore from '../../Button-more/ButtonMore';
+import profitImg from 'public/img/Profit_img.png';
+import ButtonMore from '../../Buttons/ButtonMore';
 import {
   TextWrapperTitle,
   TextTitle,

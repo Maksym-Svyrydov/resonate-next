@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-
+import Image from 'next/image';
 export const Section = styled.section`
-  outline: 2px solid tomato;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -117,7 +116,7 @@ export const SectionWrapp = styled.div`
   top: 0px;
   left: 0px;
 `;
-export const ImdBg = styled.img`
+export const ImdBg = styled(Image)`
   width: 525px;
   height: 300px;
   color: rgba(203, 190, 156, 1);

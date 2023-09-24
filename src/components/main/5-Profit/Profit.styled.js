@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import Image from 'next/image';
 export const Section = styled.section`
   display: flex;
   box-sizing: border-box;
@@ -15,7 +15,7 @@ export const ImgWrapper = styled.div`
   margin-right: auto;
   margin-bottom: 48px;
 `;
-export const Img = styled.img`
+export const Img = styled(Image)`
   width: 316px;
   height: 233px;
   @media screen and (min-width: 567px) {

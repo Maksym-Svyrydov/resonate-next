@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+// import debounce from 'lodash/debounce';
 
 import Logo from './Logo';
 import {
@@ -14,14 +14,32 @@ import {
 const Header = () => {
   const { pathname } = useRouter();
   const [showNavMenu, setShownavMenu] = useState(false);
+  // const [scrollTop, setScrollTop] = useState(0);
   const navigation = [
     { id: 1, title: 'Main', path: '/' },
     { id: 2, title: 'Blog', path: '/blog' },
     { id: 3, title: 'Privacy', path: '/privacy' },
   ];
+  // useEffect(() => {
+  //   console.log('высота страницы', document.documentElement.offsetHeight);
+  // });
   function handleNav() {
     setShownavMenu(!showNavMenu);
   }
+  // useEffect(() => {
+  //   const handleScroll = (event) => {
+  //     setScrollTop(window.scrollY);
+  //   };
+
+  //   window.addEventListener('scroll', debounce(handleScroll, 300));
+
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // });
+  // console.log('scrollTop:', scrollTop);
+  // console.log('высота страницы', document.documentElement.offsetHeight);
+  // console.dir(document);
   return (
     <HeaderSection>
       <Logo />

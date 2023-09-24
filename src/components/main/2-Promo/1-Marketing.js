@@ -1,6 +1,5 @@
 import { React, forwardRef } from 'react';
 import ButtonService from '../../Buttons/ButtonService';
-import Image from 'next/image';
 import Quotes from '../../Quote/Quote';
 import img from '../../../../public/img/01.svg';
 

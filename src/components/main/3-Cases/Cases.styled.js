@@ -1,19 +1,11 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
-import myImage from '../../../img/bg-zoo.png';
-// import gradient from '../../../img/gradient.png';
-import interic from '../../../img/Cases/intericoo_res.png';
-import cashyou from '../../../img/Cases/cashyou.png';
+import Link from 'next/link';
+
 export const Section = styled.section`
-  outline: 2px solid tomato;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   width: 100%;
-  ${
-    '' /* padding-left: 22px;
-  padding-right: 20px; */
-  }
   padding-top: 100px;
   background-color: #283340;
 `;
@@ -49,7 +41,7 @@ export const ItemZoo = styled.li`
     rgba(0, 0, 0, 0) 54.17%
   );
   border: 1px solid #cbbe9c;
-  background-image: url(${myImage});
+  background-image: url(${(props) => props.image.src});
   background-size: cover;
 `;
 export const ItemInterico = styled.li`
@@ -61,11 +53,8 @@ export const ItemInterico = styled.li`
       rgba(1, 1, 1, 0.39539565826330536) 16%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url(${interic}), no-repeat;
-
+    url(${(props) => props.image.src}), no-repeat;
   border: 1px solid #cbbe9c;
-  ${'' /* background-size: cover; */}
-  ${'' /* background-blend-mode: overlay; */}
 `;
 export const ItemCashYou = styled.li`
   padding-left: 30px;
@@ -77,7 +66,7 @@ export const ItemCashYou = styled.li`
       rgba(1, 1, 1, 0.39539565826330536) 16%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url(${cashyou}), no-repeat;
+    url(${(props) => props.image.src}), no-repeat;
   border: 1px solid #cbbe9c;
 `;
 
@@ -124,7 +113,7 @@ export const TextLink = styled.span`
   color: #f5f2f0;
   margin-right: 20px;
 `;
-export const LinkRef = styled(NavLink)`
+export const LinkRef = styled(Link)`
   display: flex;
   color: white;
 `;

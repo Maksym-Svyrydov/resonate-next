@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../../../img/03.png';
+import img from '../../../../public/img/03.png';
 import Quotes from '../../Quote/Quote';
 import {
   Section,
@@ -61,7 +61,7 @@ const Branding = () => {
       </List>
       <ButtonService />
       <SectionWrapp>
-        <ImdBg src={img} />
+        <ImdBg src={img} alt="03" />
         <SectionHelp>
           <Quotes />
           <SectionText>

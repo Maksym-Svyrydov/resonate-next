@@ -10,6 +10,10 @@ export const HeaderSection = styled.header`
   padding: 0px;
   box-sizing: border-box;
   border-bottom: 2px solid #283340;
+  @media screen and (max-width: 1365px) {
+    position: sticky;
+    top: 0;
+  }
 `;
 
 export const NavSection = styled.nav`

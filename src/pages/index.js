@@ -4,6 +4,13 @@ import { useRef } from 'react';
 import Header from '../components/common/Header';
 import Hero from '@/components/main/1-Hero/Hero';
 import Marketing from '@/components/main/2-Promo/1-Marketing';
+import Promo from '@/components/main/2-Promo/2-Promo';
+import Branding from '@/components/main/2-Promo/3-Branding';
+import Social from '@/components/main/2-Promo/4-Social';
+import Develop from '@/components/main/2-Promo/5-Develop';
+import Cases from '@/components/main/3-Cases/Cases';
+import Proud from '@/components/main/4-Customers/2-Proud';
+import Profit from '@/components/main/5-Profit/Profit';
 
 const Home = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
@@ -25,6 +32,13 @@ const Home = () => {
         <Header />
         <Hero />
         <Marketing ref={marketing} />
+        <Promo />
+        <Branding />
+        <Social />
+        <Develop />
+        <Cases />
+        <Proud />
+        <Profit />
       </>
     );
   }
