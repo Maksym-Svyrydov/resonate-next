@@ -18,7 +18,7 @@ const Profit = () => {
   return (
     <Section>
       <ImgWrapper>
-        <Img src={profitImg} alt="Profit-formula" />
+        <Img width={316} height={233} src={profitImg} alt="Profit-formula" />
       </ImgWrapper>
       <TextWrapperTitle>
         <TextTitle>

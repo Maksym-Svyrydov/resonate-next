@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import {
-  //   WrapperReview,
+  Wrapper,
   LogoCustomers,
   LogoItem,
   LogoImg,
@@ -60,51 +60,51 @@ export const SimpleSlider = () => {
     sliderRef.current.slickNext();
   };
   return (
-    <>
+    <Wrapper>
       <LogoCustomers ref={sliderRef} {...settings}>
         <LogoItem key={1}>
-          <LogoImg src={logoZoo} alt="logo" />
+          <LogoImg width={60} src={logoZoo} alt="logo" style={{}} />
         </LogoItem>
         <LogoItem key={2}>
-          <LogoImg src={logoMarloo} />
+          <LogoImg src={logoMarloo} alt="logo" />
         </LogoItem>
 
         <LogoItem key={3}>
-          <LogoImg src={avangard} />
+          <LogoImg src={avangard} alt="logo" />
         </LogoItem>
 
         <LogoItem key={4}>
-          <LogoImg src={prime} />
+          <LogoImg src={prime} alt="logo" />
         </LogoItem>
         <LogoItem key={5}>
-          <LogoImg src={gleam} />
+          <LogoImg src={gleam} alt="logo" />
         </LogoItem>
         <LogoItem key={6}>
-          <LogoImg src={nika} />
+          <LogoImg src={nika} alt="logo" />
         </LogoItem>
         <LogoItem key={7}>
-          <LogoImg src={spribe} />
+          <LogoImg src={spribe} alt="logo" />
         </LogoItem>
         <LogoItem key={8}>
-          <LogoImg src={vikno} />
+          <LogoImg src={vikno} alt="logo" />
         </LogoItem>
         <LogoItem key={9}>
-          <LogoImg src={cashyou} />
+          <LogoImg src={cashyou} alt="logo" />
         </LogoItem>
         <LogoItem key={10}>
-          <LogoImg src={intericc} />
+          <LogoImg src={intericc} alt="logo" />
         </LogoItem>
         <LogoItem key={11}>
-          <LogoImg src={orion} />
+          <LogoImg src={orion} alt="logo" />
         </LogoItem>
         <LogoItem key={12}>
-          <LogoImg src={startup} />
+          <LogoImg src={startup} alt="logo" />
         </LogoItem>
         <LogoItem key={13}>
-          <LogoImg src={step} />
+          <LogoImg src={step} alt="logo" />
         </LogoItem>
         <LogoItem key={14}>
-          <LogoImg src={uuutoo} />
+          <LogoImg src={uuutoo} alt="logo" />
         </LogoItem>
       </LogoCustomers>
       <ButtonBox>
@@ -115,6 +115,6 @@ export const SimpleSlider = () => {
           <Image src={iconArrow} alt="button-right" width={68} height={19} />
         </ButtonNext>
       </ButtonBox>
-    </>
+    </Wrapper>
   );
 };

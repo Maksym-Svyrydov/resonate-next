@@ -1,6 +1,7 @@
 import Slider from 'react-slick';
 import styled from 'styled-components';
 import Image from 'next/image';
+export const Wrapper = styled.div``;
 export const LogoItem = styled.div`
   width: 280px;
   height: 80px;
@@ -8,6 +9,7 @@ export const LogoItem = styled.div`
 export const LogoImg = styled(Image)`
   width: 100%;
   height: 100%;
+  position: static;
 `;
 
 export const LogoCustomers = styled(Slider)`
@@ -16,6 +18,7 @@ export const LogoCustomers = styled(Slider)`
   width: 100%;
   height: 85px;
   margin-bottom: 50px;
+  z-index: 1;
 
   @media (min-width: 768px) {
     width: 100%;

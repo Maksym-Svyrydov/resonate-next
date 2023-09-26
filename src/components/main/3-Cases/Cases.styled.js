@@ -1,13 +1,17 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-
-export const Section = styled.section`
+import Image from 'next/image';
+import interic from '../../../../public/img/Cases/intericoo_res.png';
+import cashyou from '../../../../public/img/Cases/cashyou.png';
+export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   width: 100%;
   padding-top: 100px;
   background-color: #283340;
+  position: relative;
+  z-index: -1;
 `;
 export const Title = styled.h2`
   font-family: 'DM Sans', sans-serif;
@@ -31,47 +35,65 @@ export const List = styled.ul`
   padding: 0px;
   list-style: none;
 `;
+import myImage from '/public/img/bg-zoo.png';
 export const ItemZoo = styled.li`
   padding-left: 30px;
   padding-top: 18px;
-  background-repeat: no-repeat;
+  position: relative;
   background-color: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0) 54.17%
   );
+
   border: 1px solid #cbbe9c;
-  background-image: url(${(props) => props.image.src});
-  background-size: cover;
 `;
+export const ZooBg = styled(Image)`
+l`;
 export const ItemInterico = styled.li`
   padding-left: 30px;
   padding-top: 18px;
-  background: linear-gradient(
-      90deg,
-      rgba(29, 29, 29, 0.6446953781512605) 0%,
-      rgba(1, 1, 1, 0.39539565826330536) 16%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(${(props) => props.image.src}), no-repeat;
+  position: relative;
+  z-index: 1;
   border: 1px solid #cbbe9c;
+`;
+export const BgWrapp = styled.div`
+  overflow: hidden;
+  zindex: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(29, 29, 29, 0.6446953781512605) 0%,
+    rgba(1, 1, 1, 0.39539565826330536) 16%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
+export const IntericcoBg = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 export const ItemCashYou = styled.li`
   padding-left: 30px;
+  position: relative;
+  z-index: 1;
   padding-top: 18px;
-
-  background: linear-gradient(
-      90deg,
-      rgba(29, 29, 29, 0.6446953781512605) 0%,
-      rgba(1, 1, 1, 0.39539565826330536) 16%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(${(props) => props.image.src}), no-repeat;
+  position: relative;
   border: 1px solid #cbbe9c;
 `;
-
+export const CashBg = styled(Image)`
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
 export const TextWrapper = styled.div`
   margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
 `;
 
 export const Text = styled.span`
@@ -96,6 +118,8 @@ export const Customer = styled.span`
 export const LinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 2;
   justify-content: flex-end;
   ${'' /* margin-left: 200px; */}
   padding-right: 0px;

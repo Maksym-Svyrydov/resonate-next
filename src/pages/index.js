@@ -30,14 +30,14 @@ const Home = () => {
     return (
       <>
         <Header />
-        <Hero />
-        <Marketing ref={marketing} />
-        <Promo />
-        <Branding />
-        <Social />
-        <Develop />
-        <Cases />
-        <Proud />
+        {/* <Hero /> */}
+        {/* <Marketing ref={marketing} /> */}
+        {/* <Promo /> */}
+        {/* <Branding /> */}
+        {/* <Social /> */}
+        {/* <Develop /> */}
+        {/* <Cases /> */}
+        {/* <Proud /> */}
         <Profit />
       </>
     );

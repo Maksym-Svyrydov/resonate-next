@@ -10,9 +10,11 @@ export const HeaderSection = styled.header`
   padding: 0px;
   box-sizing: border-box;
   border-bottom: 2px solid #283340;
+
   @media screen and (max-width: 1365px) {
     position: sticky;
     top: 0;
+    left: 0;
   }
 `;
 
@@ -33,6 +35,7 @@ export const NavSection = styled.nav`
   gap: 15px;
   &.showNav {
     transform: translateX(0%);
+    z-index: 9999;
   }
 
   @media (max-width: 767px) {
@@ -41,6 +44,7 @@ export const NavSection = styled.nav`
       width: 100%;
       padding: 120px 0px;
       gap: 45px;
+      z-index: 999;
     }
   }
 `;
@@ -57,6 +61,7 @@ export const NavLink = styled(Link)`
   padding: 8px;
   margin-left: auto;
   margin-right: auto;
+
   &.active {
     background-color: #cbbe9c;
     color: #283340;
@@ -81,7 +86,7 @@ export const ButtonMenu = styled.button`
   width: 40px;
   height: 40px;
   padding: 5px;
-
+  z-index: 9999;
   span {
     width: 30px;
     height: 2px;

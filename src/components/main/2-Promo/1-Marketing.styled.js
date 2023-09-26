@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
@@ -9,6 +9,8 @@ export const Section = styled.section`
   padding-right: 20px;
   padding-top: 100px;
   background: rgba(245, 242, 240, 1);
+  z-index: -1;
+  position: relative;
 `;
 export const TitleSection = styled.div``;
 

@@ -9,6 +9,9 @@ export const Section = styled.section`
   padding-right: 20px;
   padding-top: 100px;
   background: rgba(245, 242, 240, 1);
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
 `;
 export const TitleSection = styled.div``;
 

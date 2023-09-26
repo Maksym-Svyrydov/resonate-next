@@ -11,7 +11,6 @@ export const Section = styled.div`
   font-style: normal;
   line-height: normal;
   width: 100%;
-
   @media screen and (min-width: 1366px) {
     padding-top: 146px;
     padding-left: 78px;

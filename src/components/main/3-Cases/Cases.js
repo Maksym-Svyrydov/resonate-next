@@ -16,14 +16,20 @@ import {
   LinkWrapper,
   LinkRef,
   Icon,
+  ZooBg,
+  BgWrapp,
+  IntericcoBg,
+  CashBg,
 } from './Cases.styled';
+import Image from 'next/image';
 
 const Cases = () => {
   return (
     <Section>
       <Title>CASE STUDIES</Title>
       <List>
-        <ItemZoo image={myImage}>
+        <ItemZoo>
+          <ZooBg src={myImage} alt="label" fill />
           <TextWrapper>
             <Text>Branding &</Text>
             <br />
@@ -44,7 +50,19 @@ const Cases = () => {
             </LinkRef>
           </LinkWrapper>
         </ItemZoo>
-        <ItemInterico image={interic}>
+        <ItemInterico>
+          <BgWrapp>
+            <IntericcoBg
+              src={interic}
+              alt="intericco"
+              fill
+              priority
+              style={{
+                objectFit: 'cover',
+                zIndex: '-1',
+              }}
+            />
+          </BgWrapp>
           <TextWrapper>
             <Text>Branding &</Text>
             <br />
@@ -67,7 +85,18 @@ const Cases = () => {
             </LinkRef>
           </LinkWrapper>
         </ItemInterico>
-        <ItemCashYou image={cashyou}>
+        <ItemCashYou>
+          <BgWrapp>
+            <CashBg
+              src={cashyou}
+              alt="cashyou"
+              fill
+              style={{
+                objectFit: 'cover',
+                zIndex: '-1',
+              }}
+            />
+          </BgWrapp>
           <TextWrapper>
             <Text>Outsourced marketing department</Text>
             <br />
