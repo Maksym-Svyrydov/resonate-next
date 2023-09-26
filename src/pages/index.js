@@ -11,6 +11,9 @@ import Develop from '@/components/main/2-Promo/5-Develop';
 import Cases from '@/components/main/3-Cases/Cases';
 import Proud from '@/components/main/4-Customers/2-Proud';
 import Profit from '@/components/main/5-Profit/Profit';
+import Reviews from '@/components/main/6-Reviews/Reviews';
+import Articles from '@/components/main/7-Articles/Articles';
+import Footer from '@/components/main/8-Footer/Footer';
 
 const Home = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
@@ -38,7 +41,10 @@ const Home = () => {
         {/* <Develop /> */}
         {/* <Cases /> */}
         {/* <Proud /> */}
-        <Profit />
+        {/* <Profit /> */}
+        {/* <Reviews /> */}
+        <Articles />
+        <Footer />
       </>
     );
   }

@@ -1,6 +1,6 @@
 import Slider from 'react-slick';
 import styled from 'styled-components';
-
+import Image from 'next/image';
 export const ReviewsCustomers = styled(Slider)`
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ export const CustomerWrapper = styled.div`
   margin-left: 14px;
   margin-top: auto;
 `;
-export const CustomerAvatar = styled.img`
+export const CustomerAvatar = styled(Image)`
   border-radius: 41px;
   width: 82px;
   @media screen and (min-width: 667px) {

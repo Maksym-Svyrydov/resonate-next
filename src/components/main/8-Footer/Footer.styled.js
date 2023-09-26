@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 export const Section = styled.section`
   display: flex;
   box-sizing: border-box;
@@ -201,7 +202,7 @@ export const IconItem = styled.li`
   align-items: center;
   justify-content: center;
 `;
-export const Icon = styled.img`
+export const Icon = styled(Image)`
   width: 24px;
   height: 25px;
   fill: #283340;
@@ -219,4 +220,3 @@ export const Rsnt = styled.p`
   padding: 0px;
   margin: 0px 0px 32px 0px;
 `;
-

@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import styled from 'styled-components';
-
 export const Section = styled.section`
   display: flex;
   box-sizing: border-box;
@@ -34,7 +34,7 @@ export const Title = styled.h2`
   margin: 0px 0px 16px 0px;
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   display: block;
   margin-bottom: 13px;
   margin-left: auto;
@@ -81,7 +81,7 @@ export const Link = styled.a`
 
   text-decoration: none;
 `;
-export const Arrow = styled.img`
+export const Arrow = styled(Image)`
   margin-left: 37px;
 `;
 export const ArticleLink = styled.p`

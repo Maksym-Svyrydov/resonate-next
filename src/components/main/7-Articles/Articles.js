@@ -13,9 +13,9 @@ import {
   WrapperArticles,
   ArticleLink,
 } from './Articles.styled';
-import linkedinImg from '../../../img/Linkedin_img.png';
-import arrow from '../../../img/Arrow_link_right.svg';
-import ButtonMore from '../../Button-more/ButtonMore';
+import linkedinImg from '../../../../public/img/Linkedin_img.png';
+import arrow from '../../../../public/img/Arrow_link_right.svg';
+import ButtonMore from '../../Buttons/ButtonMore';
 const Articles = () => {
   return (
     <Section>

@@ -13,15 +13,15 @@ import {
   Icon,
   Rsnt,
 } from './Footer.styled';
-import insta from '../../../img/icons/footer-icons/instagaram.svg';
-import facebook from '../../../img/icons/footer-icons/facebook.svg';
-import be from '../../../img/icons/footer-icons/Be.svg';
-import whtsp from '../../../img/icons/footer-icons/whatsup.svg';
-import lnkdin from '../../../img/icons/footer-icons/linkiedIn.svg';
-import twitter from '../../../img/icons/footer-icons/twitter.svg';
-import mailIco from '../../../img/icons/footer-icons/mail.svg';
-import youtube from '../../../img/icons/footer-icons/youtube.svg';
-import FeedbackForm from '../../FeedbackForm/Form';
+import insta from 'public/img/icons/footer-icons/instagaram.svg';
+import facebook from 'public/img/icons/footer-icons/facebook.svg';
+import be from 'public/img/icons/footer-icons/Be.svg';
+import whtsp from 'public/img/icons/footer-icons/whatsup.svg';
+import lnkdin from 'public/img/icons/footer-icons/linkiedIn.svg';
+import twitter from 'public/img/icons/footer-icons/twitter.svg';
+import mailIco from 'public/img/icons/footer-icons/mail.svg';
+import youtube from 'public/img/icons/footer-icons/youtube.svg';
+import FeedbackForm from '../FeedbackForm/Form';
 const Footer = (marketing) => {
   // console.log(marketing.current);
   // const scrollHandler = () => {

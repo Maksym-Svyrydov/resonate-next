@@ -1,5 +1,5 @@
 import { Section, Text, TextAccent, Quote, QuoteImg } from './Reviews.styled';
-import quote from '../../../img/quote.svg';
+import quote from '../../../../public/img/quote.svg';
 import { SliderReviews } from './Slider_reviews';
 const Reviews = () => {
   return (

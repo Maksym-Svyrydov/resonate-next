@@ -1,4 +1,3 @@
-import React from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 // import Slider from 'react-slick';
@@ -14,11 +13,11 @@ import {
   ButtonBox,
   ButtonList,
 } from './Slider_reviews.styled';
-import avatCustomer from '../../../img/Customers-avatars/Igor_Radchenko.png';
-import karanda from '../../../img/Customers-avatars/Dmitry_Karanda.png';
-import kinan from '../../../img/Customers-avatars/Kinan_Antar.png';
-import chepelyk from '../../../img/Customers-avatars/Oleksii_Chepelyk.png';
-import cashyou from '../../../img/Customers-avatars/CEO Cash You.png';
+import avatCustomer from '../../../../public/img/Customers-avatars/Igor_Radchenko.png';
+import karanda from '../../../../public/img/Customers-avatars/Dmitry_Karanda.png';
+import kinan from '../../../../public/img/Customers-avatars/Kinan_Antar.png';
+import chepelyk from '../../../../public/img/Customers-avatars/Oleksii_Chepelyk.png';
+import cashyou from '../../../../public/img/Customers-avatars/CEO Cash You.png';
 
 export const SliderReviews = () => {
   const appendDots = (dots) => (
@@ -49,7 +48,11 @@ export const SliderReviews = () => {
             are doing.
           </ReviewTextItem>
           <CustomerWrapper>
-            <CustomerAvatar src={avatCustomer} alt="Igor Radchenko" />
+            <CustomerAvatar
+              src={avatCustomer}
+              alt="Igor Radchenko"
+              width={82}
+            />
             <CustomerNameWrapper>
               <CustomerName>Igor Radchenko</CustomerName>
               <CustomerCompany>CEO | Vikno System</CustomerCompany>
@@ -63,7 +66,7 @@ export const SliderReviews = () => {
             that are presently in your business.
           </ReviewTextItem>
           <CustomerWrapper>
-            <CustomerAvatar src={chepelyk} alt="Oleksii Chepelyk" />
+            <CustomerAvatar src={chepelyk} alt="Oleksii Chepelyk" width={82} />
             <CustomerNameWrapper>
               <CustomerName>Oleksii Chepelyk</CustomerName>
               <CustomerCompany>CEO | Startup.inc</CustomerCompany>
@@ -78,7 +81,7 @@ export const SliderReviews = () => {
             very satisfied and look forward to the next project!
           </ReviewTextItem>
           <CustomerWrapper>
-            <CustomerAvatar src={karanda} alt="Dmitry Karanda" />
+            <CustomerAvatar src={karanda} alt="Dmitry Karanda" width={82} />
             <CustomerNameWrapper>
               <CustomerName>Dmitry Karanda</CustomerName>
               <CustomerCompany>CEO | Orion City</CustomerCompany>
@@ -93,7 +96,7 @@ export const SliderReviews = () => {
             expertise, without having to add huge salaries to the payroll
           </ReviewTextItem>
           <CustomerWrapper>
-            <CustomerAvatar src={cashyou} alt="Igor Radchenko" />
+            <CustomerAvatar src={cashyou} alt="Igor Radchenko" width={82} />
             <CustomerNameWrapper>
               <CustomerName>Igor Radchenko</CustomerName>
               <CustomerCompany>CEO | CashYou</CustomerCompany>
@@ -106,7 +109,7 @@ export const SliderReviews = () => {
             enthusiasm.
           </ReviewTextItem>
           <CustomerWrapper>
-            <CustomerAvatar src={kinan} alt="Kinan Antar" />
+            <CustomerAvatar src={kinan} alt="Kinan Antar" width={82} />
             <CustomerNameWrapper>
               <CustomerName>Kinan Antar</CustomerName>
               <CustomerCompany>Owner | Overdose</CustomerCompany>

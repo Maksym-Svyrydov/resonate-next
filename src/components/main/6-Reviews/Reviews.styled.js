@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Section = styled.div`
@@ -42,7 +43,7 @@ export const TextAccent = styled.span`
 export const Quote = styled.div`
   margin-bottom: 10px;
 `;
-export const QuoteImg = styled.img`
+export const QuoteImg = styled(Image)`
   width: 78px;
   height: 78px;
 `;
