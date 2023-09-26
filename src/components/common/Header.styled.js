@@ -87,6 +87,9 @@ export const ButtonMenu = styled.button`
   height: 40px;
   padding: 5px;
   z-index: 9999;
+  position: fixed;
+  top: 30px;
+  right: 0px;
   span {
     width: 30px;
     height: 2px;

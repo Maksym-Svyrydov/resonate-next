@@ -32,19 +32,33 @@ const Home = () => {
   if (mobile) {
     return (
       <>
-        <Header />
-        {/* <Hero /> */}
-        {/* <Marketing ref={marketing} /> */}
-        {/* <Promo /> */}
-        {/* <Branding /> */}
-        {/* <Social /> */}
-        {/* <Develop /> */}
-        {/* <Cases /> */}
-        {/* <Proud /> */}
-        {/* <Profit /> */}
-        {/* <Reviews /> */}
-        <Articles />
-        <Footer />
+        <div
+          style={{
+            position: 'relative',
+            zIndex: '2',
+          }}
+        >
+          <Header />
+        </div>
+        <div
+          style={{
+            position: 'relative',
+            zIndex: '1',
+          }}
+        >
+          <Hero />
+          <Marketing ref={marketing} />
+          <Promo />
+          <Branding />
+          <Social />
+          <Develop />
+          <Cases />
+          <Proud />
+          <Profit />
+          <Reviews />
+          <Articles />
+          <Footer />
+        </div>
       </>
     );
   }
