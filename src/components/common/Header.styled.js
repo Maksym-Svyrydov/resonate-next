@@ -10,9 +10,10 @@ export const HeaderSection = styled.header`
   padding: 0px;
   box-sizing: border-box;
   border-bottom: 2px solid #283340;
-
+  background-color: #283340;
+  border-bottom: 1px solid #cbbe9c;
   @media screen and (max-width: 1365px) {
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
   }
@@ -33,6 +34,7 @@ export const NavSection = styled.nav`
   background-color: #283340;
   padding: 80px 0px;
   gap: 15px;
+
   &.showNav {
     transform: translateX(0%);
     z-index: 9999;
@@ -99,7 +101,7 @@ export const ButtonMenu = styled.button`
       background-color: #cbbe9c;
     }
     &:nth-child(2) {
-      background-color: #283340;
+      background-color: #cbbe9c;
     }
     &:nth-child(3) {
       background-color: #cbbe9c;

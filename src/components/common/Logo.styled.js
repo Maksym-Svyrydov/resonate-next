@@ -14,7 +14,7 @@ export const LogoName = styled.p`
   padding: 0px;
   margin: 0px;
   ${'' /* color: #f5f2f0; */}
-  color: tomato;
+  color: #cbbe9c;
 `;
 export const LogoType = styled.p`
   font-family: 'DM Sans', sans-serif;
@@ -25,5 +25,5 @@ export const LogoType = styled.p`
   box-sizing: border-box;
   margin: 0px;
   color: #f5f2f0;
-  color: tomato;
+  color: #cbbe9c;
 `;
