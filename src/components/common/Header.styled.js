@@ -16,6 +16,7 @@ export const HeaderSection = styled.header`
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 999;
   }
 `;
 
@@ -37,7 +38,7 @@ export const NavSection = styled.nav`
 
   &.showNav {
     transform: translateX(0%);
-    z-index: 9999;
+    z-index: 999;
   }
 
   @media (max-width: 767px) {
@@ -46,7 +47,7 @@ export const NavSection = styled.nav`
       width: 100%;
       padding: 120px 0px;
       gap: 45px;
-      z-index: 999;
+      z-index: 9999;
     }
   }
 `;

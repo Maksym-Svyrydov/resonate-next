@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { Link } from 'react-scroll';
+
 export const Section = styled.section`
   display: flex;
   box-sizing: border-box;
@@ -172,6 +174,7 @@ export const LinkItem = styled.li`
   margin: 0px 0px 11px 0px;
   text-decoration: none;
 `;
+export const LinkScroll = styled(Link)``;
 export const Contacts = styled.ul`
   list-style: none;
   padding: 0;

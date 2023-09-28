@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import bgImg from '../../../../img/Cases/Zoo-Bg-Img.png';
+import Image from 'next/image';
+// import bgImg from '../../../../img/Cases/Zoo-Bg-Img.png';
 
 export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
   background: rgba(245, 242, 240, 1);
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 374px) {
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -23,6 +24,7 @@ export const Section = styled.div`
     flex-direction: row;
   }
 `;
+
 export const LogoSection = styled.div`
   display: flex;
   width: 748px;
@@ -34,7 +36,7 @@ export const LogoSection = styled.div`
       rgba(1, 1, 1, 0.39539565826330536) 16%,
       rgba(0, 0, 0, 1) 100%
     ),
-    url(${bgImg}), no-repeat;
+    , no-repeat;
 
   background-size: 800px auto;
   background-repeat: no-repeat;
@@ -133,7 +135,7 @@ export const ArrowWrapper = styled.div`
     margin: 0;
   }
 `;
-export const ArrowImg = styled.img`
+export const ArrowImg = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: ' 95.315px';
     height: '110px';
@@ -157,7 +159,7 @@ export const TextAccent = styled.span`
     font-size: 48px;
   }
 `;
-export const Logo = styled.img`
+export const Logo = styled(Image)`
   @media screen and (max-width: 1364px) {
     width: 200px;
     height: 84.815px;

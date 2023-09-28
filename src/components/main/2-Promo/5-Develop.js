@@ -23,7 +23,7 @@ import {
 
 const Develop = () => {
   return (
-    <Section>
+    <Section id="Development">
       <TitleSection>
         <TextSectionM>Develop</TextSectionM>
         <TextSectionT>ment.</TextSectionT>

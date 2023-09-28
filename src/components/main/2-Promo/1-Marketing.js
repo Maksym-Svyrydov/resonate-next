@@ -22,9 +22,9 @@ import {
   SectionText,
 } from './1-Marketing.styled';
 
-const Marketing = ({ props }, marketing) => {
+const Marketing = () => {
   return (
-    <Section ref={marketing}>
+    <Section id="Marketing">
       <TitleSection>
         <TextSectionM>Marke</TextSectionM>
         <TextSectionT>ting.</TextSectionT>

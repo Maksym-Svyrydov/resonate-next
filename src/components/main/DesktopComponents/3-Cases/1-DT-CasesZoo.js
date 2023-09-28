@@ -1,11 +1,12 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import arrow from '../../../../img/Cases/Arrow.svg';
-import logoZoo from '../../../../img/Cases/zoo.svg';
-import logoZooMod from '../../../../img/Customers/kharkivzoo_white.svg';
-import arrowBack from '../../../../img/Cases/Arrow_back.svg';
+'use client';
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
+
+import useMediaQuery from '@mui/material/useMediaQuery';
+import arrow from 'public/img/Cases/Arrow.svg';
+import logoZoo from 'public/img/Cases/zoo.svg';
+import logoZooMod from 'public/img/Customers/kharkivzoo_white.svg';
+import arrowBack from 'public/img/Cases/Arrow_back.svg';
 import {
   Section,
   LogoSection,
@@ -39,22 +40,25 @@ import {
   CircleList,
   Circle,
   CircleProcess,
+  LinkStyled,
 } from './1-DT-CasesZoo.styled';
+import Image from 'next/image';
 const Zoo = () => {
-  const [screen, setScreen] = useState(() => window.innerWidth);
-  useState(() => setScreen(window.innerWidth));
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-  const showLess = () => {
-    navigate(-1);
-  };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  const mobile = useMediaQuery('(max-width:1239px)');
+  const desktop = useMediaQuery('(min-width:1240px)');
+  const router = useRouter();
+  // const navigate = useNavigate();
+  // const { pathname } = useLocation();
+  // const showLess = () => {
+  //   navigate(-1);
+  // };
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
   return (
     <Section>
       <LogoSection>
-        {screen > 1364 ? (
+        {desktop ? (
           <TitleWrapp>
             <TextTitle>Branding &</TextTitle>
             <TextTitle>Website development</TextTitle>
@@ -83,7 +87,7 @@ const Zoo = () => {
                 <TextAccent>KHARKIV ZOO</TextAccent>
               </TextTitle>
               <div>
-                <Link
+                <div
                   style={{
                     textDecoration: 'none',
                     display: 'flex',
@@ -98,21 +102,23 @@ const Zoo = () => {
                     marginBottom: '15px',
                     marginTop: '25px',
                   }}
-                  onClick={showLess}
+                  onClick={() => router.back()}
                 >
                   <span>Show less</span>
-                  <img src={arrowBack} alt="Arrow back" />
-                </Link>
+                  <Image src={arrowBack} alt="Arrow back" />
+                </div>
               </div>
             </div>
           </TitleWrapp>
         )}
       </LogoSection>
       <InfoLayout>
-        <ArrowWrapper>
-          <ArrowImg src={arrow} alt="Arrow" />
-        </ArrowWrapper>
-        {screen > 1364 ? (
+        {!mobile && (
+          <ArrowWrapper>
+            <ArrowImg src={arrow} alt="Arrow" />
+          </ArrowWrapper>
+        )}
+        {desktop ? (
           <DecriptionSection>
             <TextWrapper>
               <CaseTitle>CASE STUDIES</CaseTitle>
@@ -136,9 +142,9 @@ const Zoo = () => {
                 <p>
                   We have combined our collective experience of prolific
                   dreamers, designers, front-end developers of the company and
-                  connected it with our client's business, demonstrating a
-                  unique brand and a functional website that takes into account
-                  the entire business logic of the institution.
+                  connected it with our clients business, demonstrating a unique
+                  brand and a functional website that takes into account the
+                  entire business logic of the institution.
                 </p>
               </GoalWrapper>
             </TextWrapper>
@@ -289,7 +295,7 @@ const Zoo = () => {
               <p>
                 We have combined our collective experience of prolific dreamers,
                 designers, front-end developers of the company and connected it
-                with our client's business, demonstrating a unique brand and a
+                with our clients business, demonstrating a unique brand and a
                 functional website that takes into account the entire business
                 logic of the institution.
               </p>

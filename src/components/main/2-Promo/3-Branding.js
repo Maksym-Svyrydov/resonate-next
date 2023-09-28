@@ -23,7 +23,7 @@ import ButtonService from '../../Buttons/ButtonService';
 
 const Branding = () => {
   return (
-    <Section>
+    <Section id="Branding">
       <TitleSection>
         <TextSectionM>Bran</TextSectionM>
         <TextSectionT>ding.</TextSectionT>

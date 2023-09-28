@@ -1,4 +1,3 @@
-import { React, useRef } from 'react';
 import {
   Section,
   Title,
@@ -12,6 +11,7 @@ import {
   IconItem,
   Icon,
   Rsnt,
+  LinkScroll,
 } from './Footer.styled';
 import insta from 'public/img/icons/footer-icons/instagaram.svg';
 import facebook from 'public/img/icons/footer-icons/facebook.svg';
@@ -22,7 +22,12 @@ import twitter from 'public/img/icons/footer-icons/twitter.svg';
 import mailIco from 'public/img/icons/footer-icons/mail.svg';
 import youtube from 'public/img/icons/footer-icons/youtube.svg';
 import FeedbackForm from '../FeedbackForm/Form';
-const Footer = (marketing) => {
+const Footer = ({ ...props }) => {
+  const { mobile, desktop } = props;
+
+  console.log('mobile', mobile);
+  console.log('desktop', desktop);
+
   // console.log(marketing.current);
   // const scrollHandler = () => {
   // scrollIntoView({
@@ -72,13 +77,50 @@ const Footer = (marketing) => {
         />
         <ButtonSubmit type="submit">SEND</ButtonSubmit>
       </Form> */}
+
       <LinksTitle>Quick links</LinksTitle>
       <LinkList>
-        <LinkItem>Marketing</LinkItem>
-        <LinkItem>Promotion</LinkItem>
-        <LinkItem>Branding</LinkItem>
-        <LinkItem>Social media</LinkItem>
-        <LinkItem>Development</LinkItem>
+        {mobile ? (
+          <>
+            <LinkItem>
+              <LinkScroll
+                to="Marketing"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Marketing
+              </LinkScroll>
+            </LinkItem>
+            <LinkItem>
+              <LinkScroll to="Promo" spy={true} smooth={true} duration={500}>
+                Promotion
+              </LinkScroll>
+            </LinkItem>
+            <LinkItem>
+              <LinkScroll to="Branding" spy={true} smooth={true} duration={500}>
+                Branding
+              </LinkScroll>
+            </LinkItem>
+            <LinkItem>
+              <LinkScroll to="Social" spy={true} smooth={true} duration={500}>
+                Social media
+              </LinkScroll>
+            </LinkItem>
+            <LinkItem>
+              <LinkScroll
+                to="Development"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Development
+              </LinkScroll>
+            </LinkItem>
+          </>
+        ) : (
+          'null'
+        )}
       </LinkList>
       <LinksTitle>Contacts</LinksTitle>
       <Contacts>

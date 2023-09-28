@@ -10,8 +10,6 @@ export const Section = styled.div`
   width: 100%;
   padding-top: 100px;
   background-color: #283340;
-  position: relative;
-  z-index: -1;
 `;
 export const Title = styled.h2`
   font-family: 'DM Sans', sans-serif;
@@ -33,23 +31,24 @@ export const List = styled.ul`
   gap: 12px;
   justify-content: flex-start;
   padding: 0px;
-  list-style: none;
 `;
 import myImage from '/public/img/bg-zoo.png';
 export const ItemZoo = styled.li`
   padding-left: 30px;
   padding-top: 18px;
-  position: relative;
   background-color: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0) 54.17%
   );
 
+  position: relative;
   border: 1px solid #cbbe9c;
 `;
 export const ZooBg = styled(Image)`
-l`;
+  width: 100%;
+  height: 100%;
+`;
 export const ItemInterico = styled.li`
   padding-left: 30px;
   padding-top: 18px;
@@ -119,7 +118,7 @@ export const LinkWrapper = styled.div`
   display: flex;
   flex-direction: row;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   justify-content: flex-end;
   ${'' /* margin-left: 200px; */}
   padding-right: 0px;

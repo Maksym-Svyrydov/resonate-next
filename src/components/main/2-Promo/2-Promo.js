@@ -25,7 +25,7 @@ import {
 
 const Promo = () => {
   return (
-    <Section>
+    <Section id="Promo">
       <TitleSection>
         <TextSectionM>Promo</TextSectionM>
         <TextSectionT>tion.</TextSectionT>

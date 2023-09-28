@@ -23,7 +23,7 @@ import {
 
 const Social = () => {
   return (
-    <Section>
+    <Section id="Social">
       <TitleSection>
         <TextSectionM>Social</TextSectionM>
         <TextSectionT>Media.</TextSectionT>
