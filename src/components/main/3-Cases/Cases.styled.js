@@ -58,7 +58,6 @@ export const ItemInterico = styled.li`
 `;
 export const BgWrapp = styled.div`
   overflow: hidden;
-  zindex: 0;
   background: linear-gradient(
     90deg,
     rgba(29, 29, 29, 0.6446953781512605) 0%,

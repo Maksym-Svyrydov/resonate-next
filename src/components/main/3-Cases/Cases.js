@@ -84,7 +84,7 @@ const Cases = () => {
           </TextWrapper>
           <LinkWrapper>
             <TextLink>Show more</TextLink>
-            <LinkRef href="/intericco">
+            <LinkRef href="/main/intericco">
               {/* <BsArrowRight /> */}
               <Icon viewBox="0 0 88 32">
                 <path d="M86.747 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.829 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.829s2.047 0.781 2.829 0l12.728-12.728zM0 18h85.333v-4h-85.333v4z"></path>
@@ -114,7 +114,7 @@ const Cases = () => {
           </TextWrapper>
           <LinkWrapper>
             <TextLink>Show more</TextLink>
-            <LinkRef href="/cashyou">
+            <LinkRef href="/main/cashyou">
               {/* <BsArrowRight /> */}
               <Icon viewBox="0 0 88 32">
                 <path d="M86.747 17.414c0.781-0.781 0.781-2.047 0-2.828l-12.728-12.728c-0.781-0.781-2.047-0.781-2.829 0s-0.781 2.047 0 2.828l11.314 11.314-11.314 11.314c-0.781 0.781-0.781 2.047 0 2.829s2.047 0.781 2.829 0l12.728-12.728zM0 18h85.333v-4h-85.333v4z"></path>

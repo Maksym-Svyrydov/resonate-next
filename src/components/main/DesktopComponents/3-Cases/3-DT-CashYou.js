@@ -1,12 +1,14 @@
-import { React, useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import arrow from '../../../../img/Cases/Arrow.svg';
-import logo from '../../../../img/Cases/cashyouLogo.svg';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import arrow from 'public/img/Cases/Arrow.svg';
+import logo from 'public/img/Cases/cashyouLogo.svg';
 import {
   Section,
   LogoSection,
   TitleWrapp,
+  BgImage,
+  BgWrapp,
   TextTitle,
   TextAccent,
   LogoWrapp,
@@ -38,22 +40,26 @@ import {
   CircleEl,
   CircleProcess,
 } from './3-DT-CashYou.styled';
-import arrowBack from '../../../../img/Cases/Arrow_back.svg';
-// import bgImg from '../../../../img/Cases/Zoo-Bg-Img.png';
+import Header from '@/components/common/Header';
+import arrowBack from 'public/img/Cases/Arrow_back.svg';
+import bgImg from 'public/img/Cases/Cash.png';
 const CashYou = () => {
-  const [screen, setScreen] = useState(() => window.innerWidth);
-  useState(() => setScreen(window.innerWidth));
-  const navigate = useNavigate();
-  const { pathname } = useLocation();
-  const showLess = () => {
-    navigate(-1);
-  };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+  const mobile = useMediaQuery('(max-width:1239px)');
+  const desktop = useMediaQuery('(min-width:1240px)');
+  const router = useRouter();
+  // const [screen, setScreen] = useState(() => window.innerWidth);
+  // useState(() => setScreen(window.innerWidth));
+  // const navigate = useNavigate();
+  // const { pathname } = useLocation();
+  // const showLess = () => {
+  //   navigate(-1);
+  // };
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
   return (
     <Section>
-      {screen > 1364 ? (
+      {desktop ? (
         <>
           <LogoSection>
             <TitleWrapp>
@@ -185,8 +191,12 @@ const CashYou = () => {
         </>
       ) : (
         <>
+          <Header />
           <LogoSection>
             <TitleWrapp>
+              <BgWrapp>
+                <BgImage src={bgImg} alt="Bg interrico" fill cover />
+              </BgWrapp>
               <LogoWrapp>
                 <Logo src={logo} alt="Logo Intericco" />
               </LogoWrapp>
@@ -197,26 +207,28 @@ const CashYou = () => {
                 <TextAccent>CashYou</TextAccent>
               </TextTitle>
               <div>
-                <Link
-                  style={{
-                    textDecoration: 'none',
-                    display: 'flex',
-                    position: 'relative',
-                    padding: '6px',
-                    fontSize: '16px',
-                    color: '#F5F2F0',
-                    fontWeight: '600',
-                    fontFamily: 'Poppins',
-                    gap: '35px',
-                    justifyContent: 'flex-end',
-                    marginBottom: '15px',
-                    marginTop: '25px',
-                  }}
-                  onClick={showLess}
-                >
-                  <span>Show less</span>
-                  <img src={arrowBack} alt="Arrow back" />
-                </Link>
+                <div>
+                  <div
+                    style={{
+                      textDecoration: 'none',
+                      display: 'flex',
+                      position: 'relative',
+                      padding: '6px',
+                      fontSize: '16px',
+                      color: '#F5F2F0',
+                      fontWeight: '600',
+                      fontFamily: 'Poppins',
+                      gap: '35px',
+                      justifyContent: 'flex-end',
+                      marginBottom: '15px',
+                      marginTop: '25px',
+                    }}
+                    onClick={() => router.back()}
+                  >
+                    <span>Show less</span>
+                    <Image src={arrowBack} alt="Arrow back" />
+                  </div>
+                </div>
               </div>
             </TitleWrapp>
           </LogoSection>

@@ -1,7 +1,5 @@
 'use client';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-
 import useMediaQuery from '@mui/material/useMediaQuery';
 import arrow from 'public/img/Cases/Arrow.svg';
 import logoZoo from 'public/img/Cases/zoo.svg';
@@ -11,6 +9,7 @@ import {
   Section,
   LogoSection,
   TitleWrapp,
+  BgImage,
   TextTitle,
   TextAccent,
   LogoWrapp,
@@ -43,6 +42,8 @@ import {
   LinkStyled,
 } from './1-DT-CasesZoo.styled';
 import Image from 'next/image';
+import bgImg from 'public/img/Cases/Zoo-Bg-Img2.png';
+import Header from '@/components/common/Header';
 const Zoo = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
   const desktop = useMediaQuery('(min-width:1240px)');
@@ -77,39 +78,43 @@ const Zoo = () => {
             </LogoWrapp>
           </TitleWrapp>
         ) : (
-          <TitleWrapp>
-            <Logo src={logoZooMod} alt="Logo Zoo" />
-            <div>
-              <TextTitle>Branding &</TextTitle>
-              <TextTitle>Website development</TextTitle>
-              <TextTitle>
-                with
-                <TextAccent>KHARKIV ZOO</TextAccent>
-              </TextTitle>
+          <>
+            <Header />
+            <TitleWrapp>
+              <BgImage src={bgImg} alt="Bgzoo" fill cover />
+              <Logo src={logoZooMod} alt="Logo Zoo" />
               <div>
-                <div
-                  style={{
-                    textDecoration: 'none',
-                    display: 'flex',
-                    position: 'relative',
-                    padding: '6px',
-                    fontSize: '16px',
-                    color: '#F5F2F0',
-                    fontWeight: '600',
-                    fontFamily: 'Poppins',
-                    gap: '35px',
-                    justifyContent: 'flex-end',
-                    marginBottom: '15px',
-                    marginTop: '25px',
-                  }}
-                  onClick={() => router.back()}
-                >
-                  <span>Show less</span>
-                  <Image src={arrowBack} alt="Arrow back" />
+                <TextTitle>Branding &</TextTitle>
+                <TextTitle>Website development</TextTitle>
+                <TextTitle>
+                  with
+                  <TextAccent>KHARKIV ZOO</TextAccent>
+                </TextTitle>
+                <div>
+                  <div
+                    style={{
+                      textDecoration: 'none',
+                      display: 'flex',
+                      position: 'relative',
+                      padding: '6px',
+                      fontSize: '16px',
+                      color: '#F5F2F0',
+                      fontWeight: '600',
+                      fontFamily: 'Poppins',
+                      gap: '35px',
+                      justifyContent: 'flex-end',
+                      marginBottom: '15px',
+                      marginTop: '25px',
+                    }}
+                    onClick={() => router.back()}
+                  >
+                    <span>Show less</span>
+                    <Image src={arrowBack} alt="Arrow back" />
+                  </div>
                 </div>
               </div>
-            </div>
-          </TitleWrapp>
+            </TitleWrapp>
+          </>
         )}
       </LogoSection>
       <InfoLayout>

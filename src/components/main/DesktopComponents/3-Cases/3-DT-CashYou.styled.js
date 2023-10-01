@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import bgImg from '../../../../img/Cases/Cash.png';
+import Image from 'next/image';
+
 export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
@@ -25,13 +26,13 @@ export const Section = styled.div`
 export const LogoSection = styled.div`
   display: flex;
   flex-direction: row;
+  z-index: 1;
   background: linear-gradient(
-      90deg,
-      rgba(29, 29, 29, 0.6446953781512605) 0%,
-      rgba(1, 1, 1, 0.39539565826330536) 16%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url(${bgImg}), no-repeat;
+    90deg,
+    rgba(29, 29, 29, 0.6446953781512605) 0%,
+    rgba(1, 1, 1, 0.39539565826330536) 16%,
+    rgba(0, 0, 0, 1) 100%
+  );
 
   background-size: 800px auto;
   background-repeat: no-repeat;
@@ -53,6 +54,13 @@ export const LogoSection = styled.div`
 `;
 export const TitleWrapp = styled.div`
   margin: auto auto;
+  position: relative;
+  z-index: 1;
+  background-color: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 54.17%
+  );
   @media screen and (max-width: 1364px) {
     margin: 0;
     width: 100%;
@@ -63,12 +71,33 @@ export const TitleWrapp = styled.div`
     justify-content: space-between;
   }
 `;
+export const BgImage = styled(Image)`
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 430px;
+`;
+export const BgWrapp = styled.div`
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(29, 29, 29, 0.6446953781512605) 0%,
+    rgba(1, 1, 1, 0.39539565826330536) 16%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
 export const TextTitle = styled.p`
   color: #f5f2f0;
   font-style: normal;
   line-height: 120%;
   margin: 0px 0px 5px 0px;
   padding: 0px;
+  z-index: 1;
   @media screen and (max-width: 1364px) {
     font-size: 28px;
   }
@@ -102,6 +131,7 @@ export const LogoWrapp = styled.div`
   justify-content: center;
   align-items: center;
   line-height: 120%;
+  z-index: 1;
   @media screen and (max-width: 1365px) {
     align-items: center;
     justify-content: flex-start;
@@ -111,7 +141,7 @@ export const LogoWrapp = styled.div`
     margin-bottom: 30px;
   }
 `;
-export const Logo = styled.img`
+export const Logo = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: 226.356px;
     height: 178px;
@@ -146,7 +176,7 @@ export const ArrowWrapper = styled.div`
     width: 150px;
   }
 `;
-export const ArrowImg = styled.img`
+export const ArrowImg = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: ' 95.315px';
     height: '110px';

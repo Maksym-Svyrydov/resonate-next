@@ -6,8 +6,10 @@ export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
-  background: rgba(245, 242, 240, 1);
-  @media screen and (min-width: 374px) {
+  background-color: #283340;
+
+  @media screen and (min-width: 370px) {
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
@@ -30,17 +32,6 @@ export const LogoSection = styled.div`
   width: 748px;
   height: 1080px;
   flex-direction: row;
-  background: linear-gradient(
-      90deg,
-      rgba(29, 29, 29, 0.6446953781512605) 0%,
-      rgba(1, 1, 1, 0.39539565826330536) 16%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    , no-repeat;
-
-  background-size: 800px auto;
-  background-repeat: no-repeat;
-  background-position: top 0px right -52px;
   @media screen and (max-width: 1364px) {
     padding-top: 115px;
     width: 100%;
@@ -61,6 +52,10 @@ export const TitleWrapp = styled.div`
   width: 521px;
   height: 335.343px;
   margin: auto 113px;
+  position: relative;
+  z-index: 1;
+
+  background-blend-mode: overlay;
   @media screen and (max-width: 1364px) {
     margin: 0;
     width: 100%;
@@ -70,6 +65,12 @@ export const TitleWrapp = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
+`;
+export const BgImage = styled(Image)`
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 430px;
 `;
 export const TextTitle = styled.p`
   color: #f5f2f0;
