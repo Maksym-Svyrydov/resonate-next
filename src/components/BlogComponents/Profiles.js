@@ -144,15 +144,16 @@ export const Profile = () => {
       <Text>
         But even just with organic reach on a Company Page, you can access a
         large number of people including those who didn’t already know your
-        company existed. LinkedIn has over 770 million users{' '}
+        company existed. LinkedIn has over 770 million users
         <TxtAccent>(as of March 2022 https://about.linkedin.com)</TxtAccent>, so
         there are lots of potential customers to reach.
       </Text>
       <Text>
-        By 2025, LinkedIn is expected to reach one billion users according to{' '}
+        By 2025, LinkedIn is expected to reach one billion users according to
         <TxtAccent>
-          Statista
-          https://www.statista.com/forecasts/1147197/linkedin-users-in-the-world.
+          <br />
+          Statista https://www.statista.com/forecasts/1147197/ <br />
+          linkedin-users-in-the-world.
         </TxtAccent>
       </Text>
       <div>

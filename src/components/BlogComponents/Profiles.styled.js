@@ -11,7 +11,7 @@ export const Section = styled.div`
   line-height: normal;
   ${'' /* background-color: rgba(203, 190, 156, 0.15); */}
   @media screen and (max-width: 767px) {
-    width: 375px;
+    width: 100%;
     padding: 0px 10px 0px 0px;
   }
   @media screen and (min-width: 1365px) {

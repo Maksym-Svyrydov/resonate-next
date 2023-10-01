@@ -18,7 +18,11 @@ const BlogPage = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
   const desktop = useMediaQuery('(min-width:1240px)');
   return (
-    <>
+    <div
+      style={{
+        width: '100%',
+      }}
+    >
       <Header />
       <Hero />
       <Layout>
@@ -38,7 +42,7 @@ const BlogPage = () => {
         <Owner />
         <Footer />
       </Layout>
-    </>
+    </div>
   );
 };
 
