@@ -9,13 +9,14 @@ export const SliderContainer = styled(Slider)`
   width: 100%;
   height: 1080px;
   padding: 0;
-
   .slick-slider {
     box-sizing: border-box;
     height: 1080px;
     width: 100%;
     align-items: center;
     justify-content: center;
+  }
+  .slick-list {
   }
   .slick-dots li button:hover:before,
   .slick-dots li button:focus:before {
@@ -94,12 +95,12 @@ export const Wrapper = styled.div`
 export const ButtonBox = styled.div`
   display: flex;
   gap: 25px;
-  padding-bottom: 55px;
+  ${'' /* padding-bottom: 55px; */}
   justify-content: space-around;
-  position: relative;
-  @media (min-width: 768px) {
-    margin-top: 18px;
-    padding-bottom: 100px;
+  ${'' /* position: relative; */}
+  @media and screen (min-width: 768px) {
+    ${'' /* margin-top: 18px; */}
+    ${'' /* padding-bottom: 100px; */}
   }
 
   @media (min-width: 1280px) {
@@ -132,7 +133,7 @@ export const Frame = styled.div`
   background-color: #cbbe9c;
   @media screen and (min-width: 1365px) {
     bottom: 81px;
-    right: 34%;
+    right: 32%;
     width: 350px;
   }
   @media screen and (min-width: 1919px) {

@@ -28,12 +28,14 @@ export const Section = styled.div`
 export const LogoSection = styled.div`
   display: flex;
   flex-direction: row;
-  background: linear-gradient(
+  ${
+    '' /* background: linear-gradient(
     90deg,
     rgba(29, 29, 29, 0.6446953781512605) 0%,
     rgba(1, 1, 1, 0.39539565826330536) 16%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); */
+  }
 
   background-size: 800px auto;
   background-repeat: no-repeat;
@@ -77,6 +79,8 @@ export const BgImage = styled(Image)`
   position: relative;
   width: 100%;
   height: 430px;
+  @media screen and (min-width: 1365px) {
+  }
 `;
 export const BgWrapp = styled.div`
   overflow: hidden;
@@ -91,6 +95,11 @@ export const BgWrapp = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  @media screen and (min-width: 1365px) {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const TextTitle = styled.p`
   color: #f5f2f0;

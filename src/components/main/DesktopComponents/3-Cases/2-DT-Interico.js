@@ -62,6 +62,7 @@ const Intericco = () => {
       {desktop ? (
         <>
           <LogoSection>
+            <BgImage src={bgImg} alt="Bg interrico" fill cover />
             <TitleWrapp>
               <TextTitle>Branding,</TextTitle>
               <TextTitle>Website development,</TextTitle>
@@ -196,10 +197,8 @@ const Intericco = () => {
         <>
           <Header />
           <LogoSection>
+            <BgImage src={bgImg} alt="Bg interrico" fill cover />
             <TitleWrapp>
-              <BgWrapp>
-                <BgImage src={bgImg} alt="Bg interrico" fill cover />
-              </BgWrapp>
               <LogoWrapp>
                 <LogoText>int</LogoText>
                 <Logo src={logo} alt="Logo Intericco" />

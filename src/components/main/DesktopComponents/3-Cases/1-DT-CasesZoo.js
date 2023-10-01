@@ -48,18 +48,11 @@ const Zoo = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
   const desktop = useMediaQuery('(min-width:1240px)');
   const router = useRouter();
-  // const navigate = useNavigate();
-  // const { pathname } = useLocation();
-  // const showLess = () => {
-  //   navigate(-1);
-  // };
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [pathname]);
   return (
     <Section>
-      <LogoSection>
-        {desktop ? (
+      {desktop ? (
+        <LogoSection>
+          <BgImage src={bgImg} alt="Bgzoo" fill cover />
           <TitleWrapp>
             <TextTitle>Branding &</TextTitle>
             <TextTitle>Website development</TextTitle>
@@ -77,46 +70,47 @@ const Zoo = () => {
               </div>
             </LogoWrapp>
           </TitleWrapp>
-        ) : (
-          <>
-            <Header />
-            <TitleWrapp>
-              <BgImage src={bgImg} alt="Bgzoo" fill cover />
-              <Logo src={logoZooMod} alt="Logo Zoo" />
+        </LogoSection>
+      ) : (
+        <LogoSection>
+          <Header />
+          <TitleWrapp>
+            <BgImage src={bgImg} alt="Bgzoo" fill cover />
+            <Logo src={logoZooMod} alt="Logo Zoo" />
+            <div>
+              <TextTitle>Branding &</TextTitle>
+              <TextTitle>Website development</TextTitle>
+              <TextTitle>
+                with
+                <TextAccent>KHARKIV ZOO</TextAccent>
+              </TextTitle>
               <div>
-                <TextTitle>Branding &</TextTitle>
-                <TextTitle>Website development</TextTitle>
-                <TextTitle>
-                  with
-                  <TextAccent>KHARKIV ZOO</TextAccent>
-                </TextTitle>
-                <div>
-                  <div
-                    style={{
-                      textDecoration: 'none',
-                      display: 'flex',
-                      position: 'relative',
-                      padding: '6px',
-                      fontSize: '16px',
-                      color: '#F5F2F0',
-                      fontWeight: '600',
-                      fontFamily: 'Poppins',
-                      gap: '35px',
-                      justifyContent: 'flex-end',
-                      marginBottom: '15px',
-                      marginTop: '25px',
-                    }}
-                    onClick={() => router.back()}
-                  >
-                    <span>Show less</span>
-                    <Image src={arrowBack} alt="Arrow back" />
-                  </div>
+                <div
+                  style={{
+                    textDecoration: 'none',
+                    display: 'flex',
+                    position: 'relative',
+                    padding: '6px',
+                    fontSize: '16px',
+                    color: '#F5F2F0',
+                    fontWeight: '600',
+                    fontFamily: 'Poppins',
+                    gap: '35px',
+                    justifyContent: 'flex-end',
+                    marginBottom: '15px',
+                    marginTop: '25px',
+                  }}
+                  onClick={() => router.back()}
+                >
+                  <span>Show less</span>
+                  <Image src={arrowBack} alt="Arrow back" />
                 </div>
               </div>
-            </TitleWrapp>
-          </>
-        )}
-      </LogoSection>
+            </div>
+          </TitleWrapp>
+        </LogoSection>
+      )}
+
       <InfoLayout>
         {!mobile && (
           <ArrowWrapper>

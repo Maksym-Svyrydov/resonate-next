@@ -1,6 +1,4 @@
-import React from 'react';
 import { useRef } from 'react';
-
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import {
@@ -14,7 +12,7 @@ import {
   Arrow,
 } from './Carouse.styled';
 
-import iconArrow from '../../../img/icons/arrow-left.svg';
+import iconArrow from 'public/img/icons/arrow-left.svg';
 import Marketing from '../DesktopComponents/2-Promo/1-DT-Marketing';
 import Promo from '../DesktopComponents/2-Promo/2-DT-Promo';
 import Branding from '../DesktopComponents/2-Promo/3-DT-Branding';

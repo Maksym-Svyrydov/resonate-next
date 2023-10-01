@@ -1,7 +1,7 @@
 import React from 'react';
 import Quotes from '../../../Quote/Quote';
-import img from '../../../../img/01.svg';
-
+import img from 'public/img/01.svg';
+import Image from 'next/image';
 import {
   Section,
   TitleSection,

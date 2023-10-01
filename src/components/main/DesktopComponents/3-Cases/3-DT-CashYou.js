@@ -63,6 +63,9 @@ const CashYou = () => {
         <>
           <LogoSection>
             <TitleWrapp>
+              <BgWrapp>
+                <BgImage src={bgImg} alt="Bg interrico" fill cover />
+              </BgWrapp>
               <TextTitle>Outsourced marketing</TextTitle>
               <TextTitle>department</TextTitle>
               <TextTitle>

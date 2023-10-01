@@ -1,6 +1,6 @@
 import React from 'react';
 import Quotes from '../../../Quote/Quote';
-import img from '../../../../img/02.png';
+import img from 'public/img/02.png';
 
 import {
   Section,

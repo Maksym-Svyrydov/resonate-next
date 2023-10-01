@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 export const Section = styled.div`
   display: flex;
@@ -391,7 +392,8 @@ export const SectionWrapp = styled.div`
     margin-top: 110px;
   }
 `;
-export const ImdBg = styled.img`
+
+export const ImdBg = styled(Image)`
   width: 459px;
   height: 300px;
   flex-shrink: 0;

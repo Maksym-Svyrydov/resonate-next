@@ -38,7 +38,8 @@ export const LogoSection = styled.div`
     height: 430px;
   }
   @media screen and (min-width: 1365px) {
-    width: 39%;
+    max-width: 39%;
+    position: relative;
     height: 768px;
     background-size: 580px auto;
   }
@@ -53,9 +54,10 @@ export const TitleWrapp = styled.div`
   height: 335.343px;
   margin: auto 113px;
   position: relative;
-  z-index: 1;
+  @media screen and (max-width: 1364px) {
+    z-index: 1;
+  }
 
-  background-blend-mode: overlay;
   @media screen and (max-width: 1364px) {
     margin: 0;
     width: 100%;
@@ -67,10 +69,17 @@ export const TitleWrapp = styled.div`
   }
 `;
 export const BgImage = styled(Image)`
-  z-index: -1;
   position: relative;
   width: 100%;
   height: 430px;
+  @media screen and (max-width: 1364px) {
+    z-index: 1;
+  }
+  @media screen and (min-width: 1365px) {
+    width: 500px;
+    height: 100%;
+    z-index: 1;
+  }
 `;
 export const TextTitle = styled.p`
   color: #f5f2f0;

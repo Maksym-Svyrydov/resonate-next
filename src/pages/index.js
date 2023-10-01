@@ -13,6 +13,8 @@ import Profit from '@/components/main/5-Profit/Profit';
 import Reviews from '@/components/main/6-Reviews/Reviews';
 import Articles from '@/components/main/7-Articles/Articles';
 import Footer from '@/components/main/8-Footer/Footer';
+import Carousel from '@/components/main/Carousel/Carousel';
+import { SliderCases } from '@/components/main/DesktopComponents/3-Cases/SliderCases';
 
 const Home = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
@@ -24,7 +26,9 @@ const Home = () => {
     return (
       <>
         <Header />
-        <h1> DesktopPage</h1>
+        <Hero />
+        <Carousel />
+        <SliderCases />
       </>
     );
   }

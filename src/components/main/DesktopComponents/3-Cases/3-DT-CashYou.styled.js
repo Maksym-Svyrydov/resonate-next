@@ -70,6 +70,15 @@ export const TitleWrapp = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
+  @media screen and (max-width: 1364px) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 export const BgImage = styled(Image)`
   z-index: -1;
@@ -90,6 +99,10 @@ export const BgWrapp = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  @media screen and (min-width: 1365px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 export const TextTitle = styled.p`
   color: #f5f2f0;
