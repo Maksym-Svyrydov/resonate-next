@@ -1,4 +1,6 @@
+import Image from 'next/image';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 export const Section = styled.div`
   display: flex;
   box-sizing: border-box;
@@ -19,6 +21,10 @@ export const Section = styled.div`
     padding: 148px 155px 166px 130px;
   }
 `;
+export const LinkScroll = styled(Link)`
+  cursor: pointer;
+`;
+
 export const LinksWrapper = styled.div`
   @media screen and (min-width: 1365px) {
     padding: 75px 0px 0px 0px;
@@ -284,6 +290,15 @@ export const LinkItem = styled.li`
   text-decoration: none;
   @media screen and (min-width: 1365px) {
     font-size: 19px;
+    height: 23px;
+    transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    &:hover,
+    :focus {
+      color: #283340;
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: underline;
+    }
   }
 
   @media screen and (min-width: 1919px) {
@@ -322,9 +337,9 @@ export const SocialLinkList = styled.ul`
   flex-direction: row;
   flex-wrap: wrap;
   list-style: none;
-  padding: 10px 0px;
-
-  gap: 35px;
+  padding: 10px 5px;
+  gap: 32px;
+  overflow: hidden;
   @media screen and (min-width: 1365px) {
     margin: 0px 0px 20px 0px;
     width: 300px;
@@ -335,19 +350,33 @@ export const SocialLinkList = styled.ul`
   }
 `;
 export const IconItem = styled.li`
+  display: flex;
   padding: 0;
   width: 48px;
   height: 48px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    outline: 2px solid #283340;
+  }
 `;
-export const Icon = styled.img`
+export const Icon = styled(Image)`
   width: 24px;
-  height: 25px;
+  height: 24px;
   fill: #283340;
   margin: 0px 0px 0px 0px;
   align-items: center;
   justify-content: center;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.2);
+    fill: tomato;
+  }
 `;
 export const Rsnt = styled.p`
   color: #283340;

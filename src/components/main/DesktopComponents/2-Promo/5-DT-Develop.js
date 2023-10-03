@@ -102,7 +102,7 @@ const Marketing = () => {
           </List>
         </Wrapp>
       </ContentWrapp>
-      <ImdBg src={img} />
+      <ImdBg src={img} alt="05" />
       <WrappTitleLeft>
         <TitleSection>
           <TextSectionM>Develop</TextSectionM>

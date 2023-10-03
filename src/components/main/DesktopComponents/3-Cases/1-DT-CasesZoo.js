@@ -49,10 +49,15 @@ const Zoo = () => {
   const desktop = useMediaQuery('(min-width:1240px)');
   const router = useRouter();
   return (
-    <Section>
+    <Section id="Cases">
       {desktop ? (
         <LogoSection>
-          <BgImage src={bgImg} alt="Bgzoo" fill cover />
+          <BgImage
+            src={bgImg}
+            alt="Bgzoo"
+            fill
+            style={{ maxWidth: '1320px', height: '100%' }}
+          />
           <TitleWrapp>
             <TextTitle>Branding &</TextTitle>
             <TextTitle>Website development</TextTitle>

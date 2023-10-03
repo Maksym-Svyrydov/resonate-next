@@ -39,7 +39,7 @@ import BtnPackage from '../../../Buttons/BtnPackage';
 
 const Marketing = () => {
   return (
-    <Section>
+    <Section id="Promotion_DT">
       <ListSection>
         <Frame>
           <DotList>
@@ -97,7 +97,7 @@ const Marketing = () => {
               <TitleItem>sales funnels</TitleItem>
               <TitleText>
                 While digital advertising is one of the best ways to reach your
-                target market quickly, it's critical for organizations to
+                target market quickly, it&apos;s critical for organizations to
                 maximize different acquisition channels in their strategy.
                 Working on an inbound marketing strategy will allow you to
                 solidify your online presence and accelerate your long-term
@@ -107,7 +107,7 @@ const Marketing = () => {
           </List>
         </Wrapp>
       </ContentWrapp>
-      <ImdBg src={img} />
+      <ImdBg src={img} alt="02" />
       <WrappTitleLeft>
         <TitleSection>
           <TextSectionM>Promo-</TextSectionM>
@@ -121,7 +121,7 @@ const Marketing = () => {
           <SectionHelp>
             <Quotes />
             <SectionText>
-              Let's make performance marketing a tool for your business and
+              Let&apos;s make performance marketing a tool for your business and
               reach your audience wherever it is
             </SectionText>
           </SectionHelp>

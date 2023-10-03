@@ -1,6 +1,6 @@
 import { Section } from './Profit.styled';
-import profitImg from '../../../../img/Profit_img.png';
-import ButtonMore from '../../../Button-more/ButtonMore';
+import profitImg from 'public/img/Profit_img.png';
+import ButtonMore from '../../../Buttons/ButtonMore';
 import {
   TextWrapperTitle,
   TextTitle,
@@ -17,7 +17,7 @@ import {
 
 const ProfitFormula = () => {
   return (
-    <Section>
+    <Section id="Formula">
       <TextWrapperTitle>
         <TextTitle>
           <TextWhiteColor>Using the </TextWhiteColor>
@@ -32,7 +32,11 @@ const ProfitFormula = () => {
           <TextCremeColor>LTV.</TextCremeColor>
         </TextTitle>
         <ImgWrapper>
-          <Img src={profitImg} alt="Profit-formula" />
+          <Img
+            src={profitImg}
+            alt="Profit-formula"
+            style={{ maxWidth: '1220px', height: 'auto' }}
+          />
         </ImgWrapper>
       </TextWrapperTitle>
       <TextWrapper>

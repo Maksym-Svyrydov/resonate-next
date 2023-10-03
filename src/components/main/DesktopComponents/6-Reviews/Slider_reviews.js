@@ -1,7 +1,7 @@
 import React from 'react';
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
-import quote from '../../../../img/quote.svg';
+import quote from 'public/img/quote.svg';
 // import Slider from 'react-slick';
 import {
   ReviewsCustomers,
@@ -17,11 +17,11 @@ import {
   ButtonBox,
   ButtonList,
 } from './Slider_reviews.styled';
-import avatCustomer from '../../../../img/Customers-avatars/Igor_Radchenko.png';
-import OleksiiChepelyk from '../../../../img/Customers-avatars/Oleksii_Chepelyk.png';
-import DmitryKaranda from '../../../../img/Customers-avatars/Dmitry_Karanda.png';
-import CashYou from '../../../../img/Customers-avatars/CEO Cash You.png';
-import KinanAntar from '../../../../img/Customers-avatars/Kinan_Antar.png';
+import avatCustomer from 'public/img/Customers-avatars/Igor_Radchenko.png';
+import OleksiiChepelyk from 'public/img/Customers-avatars/Oleksii_Chepelyk.png';
+import DmitryKaranda from 'public/img/Customers-avatars/Dmitry_Karanda.png';
+import CashYou from 'public/img/Customers-avatars/CEO Cash You.png';
+import KinanAntar from 'public/img/Customers-avatars/Kinan_Antar.png';
 export const SliderReviews = () => {
   const appendDots = (dots) => (
     <ButtonBox
@@ -88,7 +88,7 @@ export const SliderReviews = () => {
             </Quote>
           </li>
           <ReviewTextItem>
-            I would highly recommend Convert 4 if you're looking for an
+            I would highly recommend Convert 4 if you&apos;re looking for an
             analytical consultant that can help you find the gaps of opportunity
             that are presently in your business.
           </ReviewTextItem>
@@ -108,9 +108,9 @@ export const SliderReviews = () => {
           </li>
           <ReviewTextItem>
             Resonate team have a lot of patience and understanding of the
-            customer's business problem. Together with their experience, they
-            have created with us customized and high quality solutions. We are
-            very satisfied and look forward to the next project!
+            customer&apos;s business problem. Together with their experience,
+            they have created with us customized and high quality solutions. We
+            are very satisfied and look forward to the next project!
           </ReviewTextItem>
           <CustomerWrapper>
             <CustomerAvatar src={DmitryKaranda} alt="Igor Radchenko" />

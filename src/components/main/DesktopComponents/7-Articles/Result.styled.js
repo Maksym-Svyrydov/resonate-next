@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Section = styled.div`
@@ -65,11 +66,11 @@ export const Item = styled.li`
 export const ImgWrapp = styled.div`
   margin: 0px;
 `;
-export const ImgBaner = styled.img`
+export const ImgBaner = styled(Image)`
   width: 398.471px;
   height: 202px;
 `;
-export const ImgLogo = styled.img`
+export const ImgLogo = styled(Image)`
   position: absolute;
   top: 20px;
   right: 20px;

@@ -65,7 +65,7 @@ const Marketing = () => {
               <WrappTitle>Social media Strategy</WrappTitle>
               <WrappText>
                 Social media strategy is a plan of how to maximise engagement
-                and interactions across social media to achieve a company's
+                and interactions across social media to achieve a company&apos;s
                 objective. These objectives may be to generate leads, improve
                 brand awareness or create a viral effect
               </WrappText>
@@ -84,10 +84,10 @@ const Marketing = () => {
             <Item>
               <TitleItem>content Production</TitleItem>
               <TitleText>
-                By creating new content, you're building a library of amazing
-                videous, images and other resources that define your brand.
-                Every time someone clicks on your article or image, you're
-                instilling name recognition
+                By creating new content, you&apos;re building a library of
+                amazing videous, images and other resources that define your
+                brand. Every time someone clicks on your article or image,
+                you&apos;re instilling name recognition
               </TitleText>
             </Item>
             <Item>
@@ -102,7 +102,7 @@ const Marketing = () => {
           </List>
         </Wrapp>
       </ContentWrapp>
-      <ImdBg src={img} />
+      <ImdBg src={img} alt="04" />
       <WrappTitleLeft>
         <TitleSection>
           <TextSectionM>Social</TextSectionM>

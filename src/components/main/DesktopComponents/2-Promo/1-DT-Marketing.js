@@ -1,7 +1,7 @@
 import React from 'react';
 import Quotes from '../../../Quote/Quote';
 import img from 'public/img/01.svg';
-import Image from 'next/image';
+
 import {
   Section,
   TitleSection,
@@ -39,7 +39,7 @@ import BtnPackage from '../../../Buttons/BtnPackage';
 
 const Marketing = () => {
   return (
-    <Section>
+    <Section id="Marketing_DT">
       <ListSection>
         <Frame>
           <DotList>
@@ -94,7 +94,7 @@ const Marketing = () => {
               <TitleItem>INBOUND MARKETING</TitleItem>
               <TitleText>
                 While digital advertising is one of the best ways to reach your
-                target market quickly, it's critical for organizations to
+                target market quickly, it&apos;s critical for organizations to
                 maximize different acquisition channels in their strategy.
                 Working on an inbound marketing strategy will allow you to
                 solidify your online presence and accelerate your long-term
@@ -111,7 +111,7 @@ const Marketing = () => {
           </List>
         </Wrapp>
       </ContentWrapp>
-      <ImdBg src={img} />
+      <ImdBg src={img} alt="01" />
       <WrappTitleLeft>
         <TitleSection>
           <TextSectionM>Marke-</TextSectionM>

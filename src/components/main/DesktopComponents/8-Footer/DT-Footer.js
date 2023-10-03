@@ -23,19 +23,20 @@ import {
   Icon,
   Rsnt,
   LinksWrapper,
+  LinkScroll,
   // CheckboxContainer,
   // Checkbox,
   // Label,
 } from './DT-Footer.styled';
-import insta from '../../../../img/icons/footer-icons/instagaram.svg';
-import facebook from '../../../../img/icons/footer-icons/facebook.svg';
-import be from '../../../../img/icons/footer-icons/Be.svg';
-import whtsp from '../../../../img/icons/footer-icons/whatsup.svg';
-import lnkdin from '../../../../img/icons/footer-icons/linkiedIn.svg';
-import twitter from '../../../../img/icons/footer-icons/twitter.svg';
-import mailIco from '../../../../img/icons/footer-icons/mail.svg';
-import youtube from '../../../../img/icons/footer-icons/youtube.svg';
-import FormFeedback from '../../../FeedbackForm/Form';
+import insta from 'public/img/icons/footer-icons/instagaram.svg';
+import facebook from 'public/img/icons/footer-icons/facebook.svg';
+import be from 'public/img/icons/footer-icons/Be.svg';
+import whtsp from 'public/img/icons/footer-icons/whatsup.svg';
+import lnkdin from 'public/img/icons/footer-icons/linkiedIn.svg';
+import twitter from 'public/img/icons/footer-icons/twitter.svg';
+import mailIco from 'public/img/icons/footer-icons/mail.svg';
+import youtube from 'public/img/icons/footer-icons/youtube.svg';
+import FormFeedback from '../../../main/FeedbackForm/Form';
 
 const FooterDesktop = () => {
   return (
@@ -43,11 +44,21 @@ const FooterDesktop = () => {
       <LinksWrapper>
         <LinksTitle>Quick links</LinksTitle>
         <LinkList>
-          <LinkItem>Marketing</LinkItem>
-          <LinkItem>Promotion</LinkItem>
-          <LinkItem>Branding</LinkItem>
-          <LinkItem>Social media</LinkItem>
-          <LinkItem>Development</LinkItem>
+          <LinkScroll to="Marketing_DT" spy={true} smooth={true} duration={500}>
+            <LinkItem>Tools</LinkItem>
+          </LinkScroll>
+          <LinkScroll to="Cases" spy={true} smooth={true} duration={500}>
+            <LinkItem>Cases</LinkItem>
+          </LinkScroll>
+          <LinkScroll to="Clients" spy={true} smooth={true} duration={500}>
+            <LinkItem>Clients</LinkItem>
+          </LinkScroll>
+          <LinkScroll to="Formula" spy={true} smooth={true} duration={500}>
+            <LinkItem>Profit formula</LinkItem>
+          </LinkScroll>
+          <LinkScroll to="Reviews" spy={true} smooth={true} duration={500}>
+            <LinkItem>Reviews</LinkItem>
+          </LinkScroll>
         </LinkList>
         <LinksTitle>Contacts</LinksTitle>
         <Contacts>

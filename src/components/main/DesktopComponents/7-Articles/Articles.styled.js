@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const Section = styled.div`
@@ -63,7 +64,7 @@ export const Title = styled.h2`
   }
 `;
 
-export const Img = styled.img`
+export const Img = styled(Image)`
   display: block;
   margin-bottom: 13px;
   margin-left: auto;
@@ -192,7 +193,7 @@ export const LinkWhite = styled.a`
     font-size: 20px;
   }
 `;
-export const Arrow = styled.img`
+export const Arrow = styled(Image)`
   @media screen and (min-width: 1365px) {
     margin-left: 25px;
     width: 37px;
@@ -203,7 +204,7 @@ export const Arrow = styled.img`
     width: 47px;
   }
 `;
-export const ArrowWhite = styled.img`
+export const ArrowWhite = styled(Image)`
   @media screen and (min-width: 1365px) {
     margin-left: 25px;
     width: 37px;

@@ -20,6 +20,7 @@ import Social from '../DesktopComponents/2-Promo/4-DT-Social';
 import Develop from '../DesktopComponents/2-Promo/5-DT-Develop';
 const Carousel = () => {
   const sliderRef = useRef(null);
+  console.log(sliderRef);
   const settings = {
     dots: false,
     //  centerMode: true,

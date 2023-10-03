@@ -22,7 +22,6 @@ import {
   IntericcoBg,
   CashBg,
 } from './Cases.styled';
-import Image from 'next/image';
 
 const Cases = () => {
   return (
@@ -69,6 +68,7 @@ const Cases = () => {
                 objectFit: 'cover',
                 zIndex: '-1',
               }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </BgWrapp>
           <TextWrapper>
@@ -103,6 +103,7 @@ const Cases = () => {
                 objectFit: 'cover',
                 zIndex: '-1',
               }}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </BgWrapp>
           <TextWrapper>

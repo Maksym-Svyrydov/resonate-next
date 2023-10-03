@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 export const Section = styled.div`
   display: flex;
@@ -102,7 +103,7 @@ export const LogoItem = styled.li`
   }
 `;
 
-export const LogoImg = styled.img`
+export const LogoImg = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: 160px;
   }
@@ -111,7 +112,7 @@ export const LogoImg = styled.img`
     width: 220px;
   }
 `;
-export const LogoImgSquare = styled.img`
+export const LogoImgSquare = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: 100px;
     height: 80px;

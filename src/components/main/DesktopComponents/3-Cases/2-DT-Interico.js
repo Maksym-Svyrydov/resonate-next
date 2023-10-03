@@ -62,21 +62,43 @@ const Intericco = () => {
       {desktop ? (
         <>
           <LogoSection>
-            <BgImage src={bgImg} alt="Bg interrico" fill cover />
             <TitleWrapp>
-              <TextTitle>Branding,</TextTitle>
-              <TextTitle>Website development,</TextTitle>
-              <TextTitle>Outsourced marketing</TextTitle>
-              <TextTitle>department</TextTitle>
-              <TextTitle>
-                with
-                <TextAccent>intericco</TextAccent>
-              </TextTitle>
-              <LogoWrapp>
-                <LogoText>int</LogoText>
-                <Logo src={logo} alt="Logo Intericco" style={{}} />
-                <LogoText>ricco</LogoText>
-              </LogoWrapp>
+              <BgWrapp>
+                <BgImage
+                  src={bgImg}
+                  alt="Bg interrico"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <div
+                    style={{
+                      marginTop: '250px',
+                    }}
+                  >
+                    <TextTitle>Branding,</TextTitle>
+                    <TextTitle>Website development,</TextTitle>
+                    <TextTitle>Outsourced marketing</TextTitle>
+                    <TextTitle>department</TextTitle>
+                    <TextTitle>
+                      with
+                      <TextAccent>intericco</TextAccent>
+                    </TextTitle>
+                  </div>
+                  <LogoWrapp>
+                    <LogoText>int</LogoText>
+                    <Logo src={logo} alt="Logo Intericco" style={{}} />
+                    <LogoText>ricco</LogoText>
+                  </LogoWrapp>
+                </div>
+              </BgWrapp>
             </TitleWrapp>
           </LogoSection>
           <InfoLayout>
@@ -197,7 +219,13 @@ const Intericco = () => {
         <>
           <Header />
           <LogoSection>
-            <BgImage src={bgImg} alt="Bg interrico" fill cover />
+            <BgImage
+              src={bgImg}
+              alt="Bg interrico"
+              fill
+              cover
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
             <TitleWrapp>
               <LogoWrapp>
                 <LogoText>int</LogoText>

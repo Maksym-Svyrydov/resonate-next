@@ -26,24 +26,28 @@ export const NavSection = styled.nav`
   position: fixed;
   top: 0;
   right: 0px;
-  background-color: blue;
+
   width: 300px;
   height: 100vh;
   box-sizing: border-box;
-  transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
+  ${'' /* transition: all 1s ease-in-out; */}
+
   background-color: #283340;
+  border-left: 2px solid #cbbe9c;
   padding: 80px 0px;
   gap: 15px;
-
+  transition: all 5s cubic-bezier(0.17, 0.67, 0.66, 0.46);
+  transform: translateX(100%);
   &.showNav {
+    transition: all 1s ease-in-out;
     transform: translateX(0%);
     z-index: 999;
   }
 
   @media (max-width: 767px) {
     &.showNav {
-      transform: translateX(00%);
+      transition: all 1s ease-in-out;
+      transform: translateX(0%);
       width: 100%;
       padding: 120px 0px;
       gap: 45px;
@@ -97,7 +101,7 @@ export const ButtonMenu = styled.button`
     width: 30px;
     height: 2px;
 
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     &:nth-child(1) {
       background-color: #cbbe9c;
     }
@@ -114,7 +118,7 @@ export const ButtonMenu = styled.button`
     width: 40px;
     height: 40px;
     align-items: center;
-    transition: all 0.5s ease-in-out;
+    transition: all 1s ease-in-out;
 
     span {
       &:nth-child(1) {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 
@@ -67,16 +68,14 @@ export const ButtonNext = styled.button`
   transition: transform 0.2s ease-in-out;
   width: auto;
   height: auto;
-
   background-color: transparent;
-
   :hover,
   :focus {
-    transform: scale(1.2) rotate(180deg);
+    transform: scale(1.2);
     cursor: pointer;
   }
 `;
-export const Arrow = styled.img`
+export const Arrow = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: 100px;
   }

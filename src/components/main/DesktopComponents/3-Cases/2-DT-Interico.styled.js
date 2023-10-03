@@ -10,7 +10,6 @@ export const Section = styled.div`
     width: 100%;
     height: 100%;
   }
-
   @media screen and (min-width: 1365px) {
     display: flex;
     width: 100%;
@@ -28,18 +27,6 @@ export const Section = styled.div`
 export const LogoSection = styled.div`
   display: flex;
   flex-direction: row;
-  ${
-    '' /* background: linear-gradient(
-    90deg,
-    rgba(29, 29, 29, 0.6446953781512605) 0%,
-    rgba(1, 1, 1, 0.39539565826330536) 16%,
-    rgba(0, 0, 0, 1) 100%
-  ); */
-  }
-
-  background-size: 800px auto;
-  background-repeat: no-repeat;
-  background-position: top 0px right -52px;
   @media screen and (max-width: 1364px) {
     padding-top: 115px;
     width: 100%;
@@ -57,6 +44,13 @@ export const LogoSection = styled.div`
 `;
 export const TitleWrapp = styled.div`
   margin: auto auto;
+  position: relative;
+  z-index: 1;
+  background-color: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0) 54.17%
+  );
   @media screen and (max-width: 1364px) {
     margin: 0;
     width: 100%;
@@ -65,13 +59,6 @@ export const TitleWrapp = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
-    z-index: 1;
-    background-color: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0) 54.17%
-    );
   }
 `;
 export const BgImage = styled(Image)`
@@ -79,8 +66,6 @@ export const BgImage = styled(Image)`
   position: relative;
   width: 100%;
   height: 430px;
-  @media screen and (min-width: 1365px) {
-  }
 `;
 export const BgWrapp = styled.div`
   overflow: hidden;
@@ -90,15 +75,13 @@ export const BgWrapp = styled.div`
     rgba(1, 1, 1, 0.39539565826330536) 16%,
     rgba(0, 0, 0, 1) 100%
   );
-  position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
   height: 100%;
   @media screen and (min-width: 1365px) {
+    width: 445px;
+    height: 768px;
     z-index: -1;
-    width: 100%;
-    height: 100%;
   }
 `;
 export const TextTitle = styled.p`

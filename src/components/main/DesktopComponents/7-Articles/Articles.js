@@ -17,16 +17,20 @@ import {
   ArticlesLayout,
   WrapperArticles,
 } from './Articles.styled';
-import linkedinImg from '../../../../img/Linkedin_img.png';
-import arrow from '../../../../img/Arrow_link_right.svg';
-import arrowWhite from '../../../../img/icons/arrow_white.svg';
+import linkedinImg from 'public/img/Linkedin_img.png';
+import arrow from 'public/img/Arrow_link_right.svg';
+import arrowWhite from 'public/img/icons/arrow_white.svg';
 
 const Articles = () => {
   return (
     <Section>
       <Layout>
         <TitleWrapper>
-          <Img src={linkedinImg} alt="LinkedIn" />
+          <Img
+            src={linkedinImg}
+            alt="LinkedIn"
+            style={{ maxWidth: '1320px', height: 'auto' }}
+          />
           <Wrapper>
             <TitleArticle>LinkedIn Strategy</TitleArticle>
             <ArticleText>How to Make it Work for Your Brand</ArticleText>
@@ -37,10 +41,20 @@ const Articles = () => {
               with in the past and share their experiences. The platform..
             </ArticleDecsription>
             <Link href="">
-              Discover more <Arrow src={arrow} alt="arrow" />
+              Discover more{' '}
+              <Arrow
+                src={arrow}
+                alt="arrow"
+                style={{ maxWidth: '320px', height: 'auto' }}
+              />
             </Link>
             <LinkWhite href="">
-              Discover more <ArrowWhite src={arrowWhite} alt="arrow" />
+              Discover more{' '}
+              <ArrowWhite
+                src={arrowWhite}
+                alt="arrow"
+                style={{ maxWidth: '320px', height: 'auto' }}
+              />
             </LinkWhite>
           </Wrapper>
         </TitleWrapper>
@@ -56,7 +70,12 @@ const Articles = () => {
             “buy negative seo” you’ll be led to results..
           </Article>
           <LinkWhite href="">
-            Discover more <ArrowWhite src={arrowWhite} alt="arrow" />
+            Discover more{' '}
+            <ArrowWhite
+              src={arrowWhite}
+              alt="arrow"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </LinkWhite>
         </div>
       </Layout>
@@ -72,7 +91,12 @@ const Articles = () => {
             “buy negative seo” you’ll be led to results..
           </Article>
           <LinkWhite href="">
-            Discover more <ArrowWhite src={arrowWhite} alt="arrow" />
+            Discover more{' '}
+            <ArrowWhite
+              src={arrowWhite}
+              alt="arrow"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </LinkWhite>
         </WrapperArticles>
         <WrapperArticles>
@@ -86,7 +110,12 @@ const Articles = () => {
             “buy negative seo” you’ll be led to results..
           </Article>
           <LinkWhite href="">
-            Discover more <ArrowWhite src={arrowWhite} alt="arrow" />
+            Discover more{' '}
+            <ArrowWhite
+              src={arrowWhite}
+              alt="arrow"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </LinkWhite>
         </WrapperArticles>
         <WrapperArticles>
@@ -100,7 +129,12 @@ const Articles = () => {
             “buy negative seo” you’ll be led to results..
           </Article>
           <LinkWhite href="">
-            Discover more <ArrowWhite src={arrowWhite} alt="arrow" />
+            Discover more{' '}
+            <ArrowWhite
+              src={arrowWhite}
+              alt="arrow"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </LinkWhite>
         </WrapperArticles>
       </ArticlesLayout>

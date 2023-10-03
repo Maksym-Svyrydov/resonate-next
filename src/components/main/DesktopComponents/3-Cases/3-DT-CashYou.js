@@ -64,17 +64,35 @@ const CashYou = () => {
           <LogoSection>
             <TitleWrapp>
               <BgWrapp>
-                <BgImage src={bgImg} alt="Bg interrico" fill cover />
+                <BgImage
+                  src={bgImg}
+                  alt="Bg CashYou"
+                  fill={true}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <div
+                    style={{
+                      marginTop: '250px',
+                    }}
+                  >
+                    <TextTitle>Outsourced marketing</TextTitle>
+                    <TextTitle>department</TextTitle>
+                    <TextTitle>
+                      with
+                      <TextAccent>CashYou</TextAccent>
+                    </TextTitle>
+                  </div>
+                  <Logo src={logo} alt="Logo Intericco" />
+                </div>
               </BgWrapp>
-              <TextTitle>Outsourced marketing</TextTitle>
-              <TextTitle>department</TextTitle>
-              <TextTitle>
-                with
-                <TextAccent>CashYou</TextAccent>
-              </TextTitle>
-              <LogoWrapp>
-                <Logo src={logo} alt="Logo Intericco" />
-              </LogoWrapp>
             </TitleWrapp>
           </LogoSection>
           <InfoLayout>
@@ -198,10 +216,16 @@ const CashYou = () => {
           <LogoSection>
             <TitleWrapp>
               <BgWrapp>
-                <BgImage src={bgImg} alt="Bg interrico" fill cover />
+                <BgImage
+                  src={bgImg}
+                  alt="Bg interrico"
+                  fill
+                  cover
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
               </BgWrapp>
               <LogoWrapp>
-                <Logo src={logo} alt="Logo Intericco" />
+                <Logo src={logo} alt="Logo CashYou" />
               </LogoWrapp>
               <TextTitle>Outsourced marketing</TextTitle>
               <TextTitle>department</TextTitle>

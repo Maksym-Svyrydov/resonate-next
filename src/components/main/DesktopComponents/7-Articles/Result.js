@@ -13,12 +13,12 @@ import {
   DescriptionResult,
 } from './Result.styled';
 
-import intericco from '../../../../img/Cases/intericoo_res.png';
-import intericcoLogo from '../../../../img/Customers/intericco_white.svg';
-import vikno from '../../../../img/Cases/vikno.png';
-import viknoLogo from '../../../../img/Customers/Vikno.svg';
-import cashyou from '../../../../img/Cases/cashyou.png';
-import cashyouLogo from '../../../../img/Customers/cashyou.svg';
+import intericco from 'public/img/Cases/intericoo_res.png';
+import intericcoLogo from 'public/img/Customers/intericco_white.svg';
+import vikno from 'public/img/Cases/vikno.png';
+import viknoLogo from 'public/img/Customers/Vikno.svg';
+import cashyou from 'public/img/Cases/cashyou.png';
+import cashyouLogo from 'public/img/Customers/cashyou.svg';
 const Result = () => {
   return (
     <Section>
@@ -26,8 +26,16 @@ const Result = () => {
       <List>
         <Item>
           <ImgWrapp>
-            <ImgBaner src={intericco} alt="Intericco" />
-            <ImgLogo src={intericcoLogo} alt="Intericco logo" />
+            <ImgBaner
+              src={intericco}
+              alt="Intericco"
+              style={{ maxWidth: '1320px', height: 'auto' }}
+            />
+            <ImgLogo
+              src={intericcoLogo}
+              alt="Intericco logo"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </ImgWrapp>
           <Customer>
             <Name>intericco</Name>
@@ -40,8 +48,16 @@ const Result = () => {
         </Item>
         <Item>
           <ImgWrapp>
-            <ImgBaner src={vikno} alt="ViknoSystems" />
-            <ImgLogo src={viknoLogo} alt="ViknoSystems logo" />
+            <ImgBaner
+              src={vikno}
+              alt="ViknoSystems"
+              style={{ maxWidth: '1420px', height: 'auto' }}
+            />
+            <ImgLogo
+              src={viknoLogo}
+              alt="ViknoSystems logo"
+              style={{ maxWidth: '320px', height: 'auto' }}
+            />
           </ImgWrapp>
           <Customer>
             <Name>ViknoSystem</Name>
@@ -52,11 +68,15 @@ const Result = () => {
         </Item>
         <Item>
           <ImgWrapp>
-            <ImgBaner src={cashyou} alt="CashYou" />
+            <ImgBaner
+              src={cashyou}
+              alt="CashYou"
+              style={{ maxWidth: '1320px', height: 'auto' }}
+            />
             <ImgLogo
               src={cashyouLogo}
               alt="CashYou logo"
-              style={{ width: '102px', height: '80.21px' }}
+              style={{ width: '102px', height: '60.21px' }}
             />
           </ImgWrapp>
           <Customer>

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import { Field } from 'formik';
+
 export const CheckboxContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -19,6 +19,11 @@ export const CheckboxContainer = styled.div`
   }
 `;
 export const Wrapper = styled.div`
+  transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.05);
+  }
   input:checked {
     & + label {
       display: flex;
@@ -31,7 +36,7 @@ export const Wrapper = styled.div`
       border: 1px solid #283340;
       color: #cbbe9c;
       background-color: #283340;
-
+      cursor: pointer;
       @media screen and (max-width: 1364px) {
         width: 140px;
         height: 32px;
@@ -137,6 +142,14 @@ export const ButtonSubmit = styled.button`
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.05);
+    background-color: #283340;
+    color: #f5f2f0;
+  }
   @media screen and (max-width: 1364px) {
     width: 140px;
     height: 42px;

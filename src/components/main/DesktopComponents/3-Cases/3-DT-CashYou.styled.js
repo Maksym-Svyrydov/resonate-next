@@ -70,15 +70,6 @@ export const TitleWrapp = styled.div`
     flex-direction: column;
     justify-content: space-between;
   }
-  @media screen and (max-width: 1364px) {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px 0px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
 `;
 export const BgImage = styled(Image)`
   z-index: -1;
@@ -94,14 +85,13 @@ export const BgWrapp = styled.div`
     rgba(1, 1, 1, 0.39539565826330536) 16%,
     rgba(0, 0, 0, 1) 100%
   );
-  position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
   height: 100%;
   @media screen and (min-width: 1365px) {
-    width: 100%;
-    height: 100%;
+    width: 445px;
+    height: 768px;
+    z-index: -1;
   }
 `;
 export const TextTitle = styled.p`
@@ -111,6 +101,7 @@ export const TextTitle = styled.p`
   margin: 0px 0px 5px 0px;
   padding: 0px;
   z-index: 1;
+
   @media screen and (max-width: 1364px) {
     font-size: 28px;
   }

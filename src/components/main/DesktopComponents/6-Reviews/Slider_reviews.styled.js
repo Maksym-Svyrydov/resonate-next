@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 
@@ -52,6 +53,7 @@ export const WrapperReview = styled.ul`
     max-width: 480px;
     height: 350px;
     margin-bottom: 40px;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: 1919px) {
@@ -63,7 +65,8 @@ export const WrapperReview = styled.ul`
 export const Quote = styled.div`
   margin-bottom: 10px;
 `;
-export const QuoteImg = styled.img`
+
+export const QuoteImg = styled(Image)`
   @media screen and (min-width: 1365px) {
     width: 58px;
     height: 58px;
@@ -94,15 +97,17 @@ export const CustomerWrapper = styled.li`
   margin-right: auto;
   margin-top: auto;
 `;
-export const CustomerAvatar = styled.img`
+export const CustomerAvatar = styled(Image)`
   @media screen and (min-width: 1365px) {
     border-radius: 50%;
     width: 80px;
+    height: 80px;
   }
 
   @media screen and (min-width: 1919px) {
     border-radius: 50%;
     width: 100px;
+    height: 100px;
   }
 `;
 export const CustomerNameWrapper = styled.div`
@@ -128,7 +133,6 @@ export const CustomerCompany = styled.span`
 export const ButtonBox = styled.div`
   justify-content: space-around;
   display: flex;
-  width: 300px;
 
   @media (min-width: 768px) {
     margin-top: 18px;
@@ -136,8 +140,10 @@ export const ButtonBox = styled.div`
   }
 
   @media (min-width: 1280px) {
-    margin-top: 32px;
-    padding-bottom: 118px;
+    margin-top: 82px auto;
+    padding-bottom: 8px;
+    width: 100%;
+    position: relative;
   }
 `;
 export const ButtonList = styled.ul`

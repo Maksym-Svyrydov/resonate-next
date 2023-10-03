@@ -15,7 +15,11 @@ import Articles from '@/components/main/7-Articles/Articles';
 import Footer from '@/components/main/8-Footer/Footer';
 import Carousel from '@/components/main/Carousel/Carousel';
 import { SliderCases } from '@/components/main/DesktopComponents/3-Cases/SliderCases';
-
+import Customers from '../components/main/DesktopComponents/4-Customers/Customers';
+import ProfitFormula from '@/components/main/DesktopComponents/5-Profit/Profit';
+import ReviewsCustomers from '@/components/main/DesktopComponents/6-Reviews/Reviews';
+import CarouselResult from '@/components/main/DesktopComponents/7-Articles/Carousel';
+import FooterDesktop from '@/components/main/DesktopComponents/8-Footer/DT-Footer';
 const Home = () => {
   const mobile = useMediaQuery('(max-width:1239px)');
   const desktop = useMediaQuery('(min-width:1240px)');
@@ -29,6 +33,11 @@ const Home = () => {
         <Hero />
         <Carousel />
         <SliderCases />
+        <Customers />
+        <ProfitFormula />
+        <ReviewsCustomers />
+        <CarouselResult />
+        <FooterDesktop />
       </>
     );
   }

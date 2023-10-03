@@ -1,6 +1,4 @@
-import React from 'react';
 import { useRef } from 'react';
-
 import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import {
@@ -14,7 +12,7 @@ import {
   Arrow,
 } from './Carousel.styled';
 
-import iconArrow from '../../../../img/icons/Arrow-Icon.svg';
+import iconArrow from 'public/img/icons/Arrow-Icon.svg';
 import Articles from './Articles';
 import Result from './Result';
 
@@ -59,10 +57,18 @@ const CarouselResult = () => {
       </SliderBox>
       <ButtonBox>
         <ButtonPreview onClick={goToPreviousSlide}>
-          <Arrow src={iconArrow} alt="button-left" />
+          <Arrow
+            src={iconArrow}
+            alt="button-left"
+            style={{ maxWidth: '320px', height: 'auto' }}
+          />
         </ButtonPreview>
         <ButtonNext onClick={goToNextSlide}>
-          <Arrow src={iconArrow} alt="button-right" />
+          <Arrow
+            src={iconArrow}
+            alt="button-right"
+            style={{ maxWidth: '320px', height: 'auto' }}
+          />
         </ButtonNext>
       </ButtonBox>
     </Layout>

@@ -10,11 +10,29 @@ import {
   ButtonSubmit,
   ContactTitle,
 } from './Form.styled';
+import styled from 'styled-components';
 import { nanoid } from 'nanoid';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const StyledContainer = styled(ToastContainer)`
+  .Toastify__toast {
+    color: #f5f2f0;
+    background: #283340;
+    border: 3px solid #cbbe9c;
+    border-radius: 12px;
+  }
+  .Toastify__progress-bar {
+    background: #cbbe9c;
+    height: 10px;
+  }
+  svg {
+    fill: #cbbe9c;
+  }
+`;
 const FormFeedback = () => {
   const [screen, setScreen] = useState(() => window.innerWidth);
   useState(() => setScreen(window.innerWidth));
+
   return (
     <div>
       <Formik
@@ -27,10 +45,13 @@ const FormFeedback = () => {
           details: '',
         }}
         onSubmit={(values, onSubmitProps) => {
+          const notify = () =>
+            toast.success(
+              `Thank you ${values.Name} for your request! We will definitely contact you soon!`
+            );
           console.log(values);
-          // console.log(values.Name);
+          notify();
           onSubmitProps.resetForm();
-          alert(`Dear ${values.Name} we are callback you!`);
         }}
       >
         <Form>
@@ -41,12 +62,12 @@ const FormFeedback = () => {
           <CheckboxContainer role="group" aria-labelledby="checkbox-group">
             <Wrapper>
               <Checkbox
-                id="Marketing"
+                id="marketing"
                 type="checkbox"
                 name="services"
                 value="Marketing"
               />
-              <Label htmlFor="Marketing"> Marketing</Label>
+              <Label htmlFor="marketing"> Marketing</Label>
             </Wrapper>
             <Wrapper>
               <Checkbox
@@ -59,30 +80,30 @@ const FormFeedback = () => {
             </Wrapper>
             <Wrapper>
               <Checkbox
-                id="Social"
+                id="social"
                 type="checkbox"
                 name="services"
                 value="Social media"
               />
-              <Label htmlFor="Social">Social media</Label>
+              <Label htmlFor="social">Social media</Label>
             </Wrapper>
             <Wrapper>
               <Checkbox
-                id="Development"
+                id="development"
                 type="checkbox"
                 name="services"
                 value="Development"
               />
-              <Label htmlFor="Development">Development</Label>
+              <Label htmlFor="development">Development</Label>
             </Wrapper>
             <Wrapper>
               <Checkbox
-                id="Branding"
+                id="branding"
                 type="checkbox"
                 name="services"
                 value="Branding"
               />
-              <Label htmlFor="Branding">Branding</Label>
+              <Label htmlFor="branding">Branding</Label>
             </Wrapper>
             <Wrapper>
               <Checkbox
@@ -97,9 +118,7 @@ const FormFeedback = () => {
           {screen < 1364 ? <ContactTitle>Contact info</ContactTitle> : <></>}
           <InputContainer>
             <Input id="Name" name="Name" placeholder="Name*" required />
-
             <Input id="Phone" name="Phone" placeholder="Phone" />
-
             <Input
               id="email"
               name="email"
@@ -107,7 +126,6 @@ const FormFeedback = () => {
               type="email"
               required
             />
-
             <Input
               id="details"
               name="details"
@@ -115,11 +133,22 @@ const FormFeedback = () => {
               type="textarea"
               required
             />
-
             <ButtonSubmit type="submit">Send</ButtonSubmit>
           </InputContainer>
         </Form>
       </Formik>
+      <StyledContainer
+        position="top-right"
+        autoClose={3500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 };
