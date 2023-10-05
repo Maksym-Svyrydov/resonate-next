@@ -26,17 +26,15 @@ export const NavSection = styled.nav`
   position: fixed;
   top: 0;
   right: 0px;
-
   width: 300px;
   height: 100vh;
   box-sizing: border-box;
   ${'' /* transition: all 1s ease-in-out; */}
-
   background-color: #283340;
   border-left: 2px solid #cbbe9c;
   padding: 80px 0px;
   gap: 15px;
-  transition: all 5s cubic-bezier(0.17, 0.67, 0.66, 0.46);
+  transition: all 300ms cubic-bezier(0, 0, 0.58, 1);
   transform: translateX(100%);
   &.showNav {
     transition: all 1s ease-in-out;
