@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styled from 'styled-components';
 
 export const FormContainer = styled.div`
@@ -9,7 +10,15 @@ export const FormContainer = styled.div`
   line-height: normal;
   margin-left: auto;
   margin-right: auto;
-
+  position: sticky;
+  top: 80px;
+  left: 0;
+  transition: All 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.03);
+    border: 3px solid #cbbe9c;
+  }
   @media screen and (max-width: 1364px) {
     visibility: hidden;
   }
@@ -24,7 +33,6 @@ export const FormContainer = styled.div`
     width: 339px;
     padding: 17px 14px;
   }
-  ${'' /* margin-right: auto; */}
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -71,14 +79,34 @@ export const SocialContainer = styled.div``;
 export const List = styled.ul`
   list-style: none;
   display: flex;
-  gap: 31px;
+  gap: 15px;
   jusify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
 `;
-export const Item = styled.li``;
-export const Link = styled.a``;
-export const Icon = styled.img``;
+export const Item = styled.li`
+  width: 50px;
+  height: 50px;
+  jusify-content: center;
+  align-items: center;
+`;
+export const Link = styled.a`
+  display: flex;
+  jusify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+`;
+export const Icon = styled(Image)`
+  margin: auto;
+  transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.15);
+  }
+`;
 export const WrapperBottom = styled.div`
   display: flex;
   flex-direction: column;
@@ -115,6 +143,13 @@ export const LinkWrapper = styled.div`
   border: 1px solid #cbbe9c;
   align-items: center;
   justify-content: center;
+  transition: All 0.8s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  &:hover,
+  :focus {
+    transform: scale(1.1);
+    border: 3px solid #cbbe9c;
+    border-radius: 8px;
+  }
 `;
 export const LinkBottom = styled.a`
   color: #cbbe9c;

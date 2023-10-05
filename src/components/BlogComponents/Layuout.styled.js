@@ -11,13 +11,29 @@ export const Layout = styled.div`
   font-style: normal;
   line-height: normal;
 `;
+export const ArticlesWrapp = styled.div`
+  display: flex;
+  flex-direction: column;
+  jusify-content: center;
+  width: 100%;
+  @media screen and (min-width: 1365px) {
+    padding: 0px 0px;
+    width: 995px;
+    margin-left: 34px;
+  }
+  @media screen and (min-width: 1919px) {
+    padding: 0px 0px;
+    width: 1466px;
+    margin-left: 34px;
+  }
+`;
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   jusify-content: center;
-  width: 0;
-  height: 10000px;
-
+  width: 100%;
+  height: 100%;
+  position: relative;
   @media screen and (max-width: 1364px) {
     visibility: hidden;
   }
@@ -34,9 +50,11 @@ export const Wrapper = styled.div`
 `;
 export const WrapperContent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 0px 0px;
   margin-right: auto;
+  width: 100%;
   @media screen and (max-width: 1364px) {
     margin-left: 9px;
   }

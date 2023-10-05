@@ -15,9 +15,10 @@ export const Section = styled.div`
     padding-left: 0px;
   }
   @media screen and (min-width: 1365px) {
-    padding-top: 213px;
+    padding-top: 50px;
   }
   @media screen and (min-width: 1919px) {
+    padding-top: 65px;
   }
 `;
 export const Wrapper = styled.div`

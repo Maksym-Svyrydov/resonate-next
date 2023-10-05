@@ -5,7 +5,6 @@ export const Section = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-top: 190px;
   background: #283340;
   color: #f5f2f0;
   ${'' /* align-items: center; */}
@@ -16,16 +15,20 @@ export const Section = styled.div`
     align-items: center;
     justify-content: center;
     padding: 0px 10px 0px 10px;
-    height: 567px;
+    height: 367px;
   }
   @media screen and (max-width: 1364px) {
+    padding: 0px 10px 0px 10px;
   }
   @media screen and (min-width: 1365px) {
-    height: 567px;
+    height: 367px;
   }
 `;
 export const Wrapper = styled.div`
-  margin: 0 auto;
+  margin: auto auto;
+  align-items: center;
+  jusify-content: center;
+  padding: 0px 0px;
 `;
 export const Title = styled.h1`
   color: #cbbe9c;
@@ -47,7 +50,7 @@ export const SubTitile = styled.p`
   }
 `;
 export const Author = styled.p`
-  margin-bottom: 190px;
+  ${'' /* margin-bottom: 190px; */}
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
   }

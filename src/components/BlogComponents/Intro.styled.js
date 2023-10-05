@@ -7,7 +7,7 @@ export const Section = styled.div`
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  height: 100%;
+
   ${'' /* background: #f5f2f0; */}
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
@@ -51,6 +51,7 @@ export const AvatarWrapp = styled.div`
 
 export const Avatar = styled(Image)`
   width: 110px;
+  height: 110px;
   border-radius: 50%;
   @media screen and (max-width: 768px) {
     width: 70px;

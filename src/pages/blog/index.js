@@ -1,10 +1,9 @@
 import Header from '@/components/common/Header';
-import Hero from '@/components/main/1-Hero/Hero';
+import { Hero } from '@/components/BlogComponents/Hero';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import {
-  Layout,
-  Wrapper,
   WrapperContent,
+  ArticlesWrapp,
 } from '../../components/BlogComponents/Layuout.styled';
 import { ContactForm } from '@/components/ContactForm/ContactForm';
 import { Contenst } from '@/components/BlogComponents/Contents';
@@ -15,7 +14,6 @@ import { StartStrategy } from '@/components/BlogComponents/LnkdnArticle';
 import { Owner } from '@/components/BlogComponents/Owner';
 import { Profile } from '@/components/BlogComponents/Profiles';
 const BlogPage = () => {
-  const mobile = useMediaQuery('(max-width:1239px)');
   const desktop = useMediaQuery('(min-width:1240px)');
   return (
     <div
@@ -25,23 +23,19 @@ const BlogPage = () => {
     >
       <Header />
       <Hero />
-      <Layout>
-        {/* {desktop && (
-          <Wrapper>
-            <ContactForm />
-          </Wrapper>
-        )} */}
+      <WrapperContent>
+        {desktop && <ContactForm />}
 
-        <WrapperContent>
+        <ArticlesWrapp>
           <Intro />
           <Contenst />
           <StartStrategy />
           <CheckList />
           <Profile />
-        </WrapperContent>
-        <Owner />
-        <Footer />
-      </Layout>
+        </ArticlesWrapp>
+      </WrapperContent>
+      <Owner />
+      <Footer />
     </div>
   );
 };
