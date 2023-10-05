@@ -1,14 +1,13 @@
-import { useState } from 'react';
+import { useMediaQuery } from '@mui/material';
 import { ContactForm } from '../ContactForm/ContactForm';
 import { Section, Wrapper, Title, SubTitile, Text } from './Privacy.styled';
 
 export const PrivacyArt = () => {
-  const [screen, setScreen] = useState(() => window.innerWidth);
-  useState(() => setScreen(window.innerWidth));
+  const desktop = useMediaQuery('(min-width:1240px)');
 
   return (
     <Section>
-      {screen > 1365 && <ContactForm />}
+      {desktop && <ContactForm />}
       <Wrapper>
         <Title>Who we are</Title>
         <Text>
