@@ -1,3 +1,4 @@
+'use client';
 import Header from '@/components/common/Header';
 import { Hero } from '@/components/BlogComponents/Hero';
 import useMediaQuery from '@mui/material/useMediaQuery';
