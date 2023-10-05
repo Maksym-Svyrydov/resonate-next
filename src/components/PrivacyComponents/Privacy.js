@@ -13,16 +13,18 @@ export const PrivacyArt = () => {
         <Title>Who we are</Title>
         <Text>
           This website is operated by Resonate LTD. The privacy of our user
-          Resonate LTD ('we', 'us', 'our') collect, use and are responsible for
-          storing certain personal information about you ('you', 'your',
-          'yours'). Resonate LTD ('we', 'us', 'our') collect, use and are
-          responsible for storing certain personal information about you ('you',
-          'your', 'yours').s is extremely important to us and therefore we
-          encourage all users to read this policy very carefully because it
-          contains important information regarding:who we are;how and why we
-          collect, store, use and share personal information;your rights in
-          relation to your personal information; and how to contact us and
-          supervisory authorities in the event that you have a complaint.
+          Resonate LTD (&#39;we&#39;, &#39;us&#39;, &#39;our&#39;) collect, use
+          and are responsible for storing certain personal information about you
+          (&#39;you&#39;, &#39;your&#39;, &#39;yours&#39;). Resonate LTD
+          (&#39;we&#39;, &#39;us&#39;, &#39;our&#39;) collect, use and are
+          responsible for storing certain personal information about you
+          (&#39;you&#39;, &#39;your&#39;, &#39;yours&#39;).s is extremely
+          important to us and therefore we encourage all users to read this
+          policy very carefully because it contains important information
+          regarding:who we are;how and why we collect, store, use and share
+          personal information;your rights in relation to your personal
+          information; and how to contact us and supervisory authorities in the
+          event that you have a complaint.
         </Text>
         <SubTitile>The personal information we collect and use</SubTitile>
         <Text>

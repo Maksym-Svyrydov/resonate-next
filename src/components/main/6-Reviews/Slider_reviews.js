@@ -61,7 +61,7 @@ export const SliderReviews = () => {
         </WrapperReview>
         <WrapperReview key={2}>
           <ReviewTextItem>
-            I would highly recommend Convert 4 if you're looking for an
+            I would highly recommend Convert 4 if you&#39;re looking for an
             analytical consultant that can help you find the gaps of opportunity
             that are presently in your business.
           </ReviewTextItem>
@@ -76,9 +76,9 @@ export const SliderReviews = () => {
         <WrapperReview key={3}>
           <ReviewTextItem>
             Resonate team have a lot of patience and understanding of the
-            customer's business problem. Together with their experience, they
-            have created with us customized and high quality solutions. We are
-            very satisfied and look forward to the next project!
+            customer&#39;s business problem. Together with their experience,
+            they have created with us customized and high quality solutions. We
+            are very satisfied and look forward to the next project!
           </ReviewTextItem>
           <CustomerWrapper>
             <CustomerAvatar src={karanda} alt="Dmitry Karanda" width={82} />
