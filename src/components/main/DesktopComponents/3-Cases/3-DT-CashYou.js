@@ -223,40 +223,47 @@ const CashYou = () => {
                   cover
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-              </BgWrapp>
-              <LogoWrapp>
-                <Logo src={logo} alt="Logo CashYou" />
-              </LogoWrapp>
-              <TextTitle>Outsourced marketing</TextTitle>
-              <TextTitle>department</TextTitle>
-              <TextTitle>
-                with
-                <TextAccent>CashYou</TextAccent>
-              </TextTitle>
-              <div>
-                <div>
-                  <div
-                    style={{
-                      textDecoration: 'none',
-                      display: 'flex',
-                      position: 'relative',
-                      padding: '6px',
-                      fontSize: '16px',
-                      color: '#F5F2F0',
-                      fontWeight: '600',
-                      fontFamily: 'Poppins',
-                      gap: '35px',
-                      justifyContent: 'flex-end',
-                      marginBottom: '15px',
-                      marginTop: '25px',
-                    }}
-                    onClick={() => router.back()}
-                  >
-                    <span>Show less</span>
-                    <Image src={arrowBack} alt="Arrow back" />
+                <div
+                  style={{
+                    paddingLeft: '20px',
+                    paddingRight: '20px',
+                  }}
+                >
+                  <LogoWrapp>
+                    <Logo src={logo} alt="Logo CashYou" />
+                  </LogoWrapp>
+                  <TextTitle>Outsourced marketing</TextTitle>
+                  <TextTitle>department</TextTitle>
+                  <TextTitle>
+                    with
+                    <TextAccent>CashYou</TextAccent>
+                  </TextTitle>
+                  <div>
+                    <div>
+                      <div
+                        style={{
+                          textDecoration: 'none',
+                          display: 'flex',
+                          position: 'relative',
+                          padding: '6px',
+                          fontSize: '16px',
+                          color: '#F5F2F0',
+                          fontWeight: '600',
+                          fontFamily: 'Poppins',
+                          gap: '35px',
+                          justifyContent: 'flex-end',
+                          marginBottom: '15px',
+                          marginTop: '25px',
+                        }}
+                        onClick={() => router.back()}
+                      >
+                        <span>Show less</span>
+                        <Image src={arrowBack} alt="Arrow back" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </BgWrapp>
             </TitleWrapp>
           </LogoSection>
           <InfoLayout>

@@ -28,7 +28,7 @@ export const LogoSection = styled.div`
   display: flex;
   flex-direction: row;
   @media screen and (max-width: 1364px) {
-    padding-top: 115px;
+    padding-top: 100px;
     width: 100%;
     height: 430px;
   }
@@ -55,20 +55,22 @@ export const TitleWrapp = styled.div`
     margin: 0;
     width: 100%;
     height: 100%;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 `;
 export const BgImage = styled(Image)`
-  z-index: -1;
+  z-index: -2;
   position: relative;
   width: 100%;
   height: 430px;
 `;
 export const BgWrapp = styled.div`
   overflow: hidden;
+
+  position: relative;
   background: linear-gradient(
     90deg,
     rgba(29, 29, 29, 0.6446953781512605) 0%,

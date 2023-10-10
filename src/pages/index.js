@@ -1,4 +1,3 @@
-'use client';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Header from '../components/common/Header';
 import Hero from '@/components/main/1-Hero/Hero';

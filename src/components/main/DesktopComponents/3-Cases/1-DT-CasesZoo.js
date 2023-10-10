@@ -104,6 +104,7 @@ const Zoo = () => {
                     justifyContent: 'flex-end',
                     marginBottom: '15px',
                     marginTop: '25px',
+                    zIndex: '2',
                   }}
                   onClick={() => router.back()}
                 >

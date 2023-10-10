@@ -14,11 +14,11 @@ export const Section = styled.div`
   @media screen and (max-width: 768px) {
     align-items: center;
     justify-content: center;
-    padding: 0px 10px 0px 10px;
+    padding: 100px 10px 0px 10px;
     height: 367px;
   }
   @media screen and (max-width: 1364px) {
-    padding: 0px 10px 0px 10px;
+    padding: 110px 10px 0px 10px;
   }
   @media screen and (min-width: 1365px) {
     height: 367px;

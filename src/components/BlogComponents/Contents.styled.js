@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
     padding: 5px 10px;
   }
 `;
-export const Title = styled.h3`
+export const Title = styled.span`
   color: #000;
   font-family: 'DM Sans', sans-serif;
   font-size: 24px;
@@ -48,7 +48,7 @@ export const TitleAccent = styled.span`
     font-size: 14px;
   }
 `;
-export const ListTitle = styled.p`
+export const ListTitle = styled.span`
   color: rgba(40, 51, 64, 0.8);
   font-family: 'DM Sans', sans-serif;
   font-size: 20px;
@@ -62,7 +62,7 @@ export const ListTitle = styled.p`
     line-height: 100%;
   }
 `;
-export const List = styled.ul`
+export const List = styled.span`
   color: rgba(40, 51, 64, 0.8);
   font-family: 'DM Sans', sans-serif;
   font-size: 20px;
@@ -81,6 +81,6 @@ export const List = styled.ul`
   }
 `;
 
-export const Item = styled.li`
+export const Item = styled.span`
   padding-left: 20px;
 `;

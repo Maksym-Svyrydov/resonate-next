@@ -65,7 +65,7 @@ export const TitleWrapp = styled.div`
     margin: 0;
     width: 100%;
     height: 100%;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
